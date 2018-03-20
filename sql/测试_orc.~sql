@@ -1,0 +1,23 @@
+select to_char(to_date('2005-12-25,13:25:59','yyyy-mm-dd,hh24:mi:ss'),'yyyy-mm-dd hh24:mi:ss') from dual
+
+select to_char(sysdate,'yyyy-mm-dd hh24:mi:ss') from dual
+
+select * from CUX_SMT_PROD_RP where 工单类型 = '正常' and (装配件描述  not like '%F1专用%' and   装配件描述 not like '%F1 TB%')
+
+select * from cux_wip_smt_doneinfo where rownum<=30000 order by  created_date desc
+
+select wip_entity_name,count(item_description) from (select * from cux_wip_smt_doneinfo where rownum<=100 order by  created_date desc) group by wip_entity_name 
+select * from (select * from cux_wip_smt_doneinfo where rownum<=100 order by  created_date desc) where wip_entity_name ='1703435-S'
+
+select * from cux_wip_smt_doneinfo where rownum<=30000  and created_date > to_date('2016-12-01','yyyy-mm-dd') order by  created_date desc
+
+declare 
+select 日期 as workdate, sum(生产总点数) as pointcount,生产线别 as latyple from CUX_SMT_PROD_RP where 工单类型='正常' and 日期>=to_date('2016-12-01','yyyy-mm-dd') and 日期<=to_date('2016-12-31','yyyy-mm-dd') group by 日期,生产线别 order by 日期
+
+select 日期 as cdate, organization_code as saletype,sum(生产总点数) as pointcount from CUX_SMT_PROD_RP where 工单类型 = '正常' and (装配件描述  not like '%F1专用%' and   装配件描述 not like '%F1 TB%') and 日期 >= to_date('2017 - 05 - 01', 'yyyy - mm - dd') and 日期 <= to_date('2017 - 05 - 31', 'yyyy - mm - dd') group by 日期, organization_code order by 日期
+select * from CUX_SMT_PROD_RP where 工单类型 = '正常' and (装配件描述  not like '%F1专用%' and   装配件描述 not like '%F1 TB%') and 日期 >= to_date('2017 - 05 - 01', 'yyyy - mm - dd') and 日期 <= to_date('2017 - 05 - 31', 'yyyy - mm - dd')  order by 日期
+
+select to_date('2016-12-01','yyyy-mm-dd') from dual
+
+select * from (select 日期 as workdate, sum(生产总点数) as pointcount,生产线别 as latyple from CUX_SMT_PROD_RP where 工单类型='正常' and to_char(日期,'yyyy-mm')='2017-05'  group by 日期,生产线别) t where pointcount = 518892.52
+select 日期 as workdate, 生产总点数,生产线别  from CUX_SMT_PROD_RP where 工单类型='正常' and to_char(日期,'yyyy-mm-dd')='2017-05-04' and 生产线别 = 'E-SMT04A-2'

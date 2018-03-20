@@ -1,0 +1,2352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{34B9758B-4F92-4969-B8A0-D688E52EA75B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SMTCost</RootNamespace>
+    <AssemblyName>成本分析</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>E:\成本计算\成本发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+    <BootstrapperComponentsUrl>E:\成本计算\成本发布\framework</BootstrapperComponentsUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C4CFD91B2B4A81A1CFDA07991550E9D9033E805E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SMTCost_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.BonusSkins.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.Designer.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v16.2.Core, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeConverter.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v16.2.Core, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v16.2.Web, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v16.2.Web.Mvc, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v16.2.Web.Mvc5, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v16.2.Win, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v16.2.UI, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DemoData.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DemoData.v16.2.Core, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DemoReports.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=4c3bc44151be4b47, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DevAV.v16.2.Data, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DevAV.v16.2.Reports, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Diagram.v16.2.Core, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Docs.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v16.2.Core, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v16.2.Core, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v16.2.Core, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v16.2.Core, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v16.2.Extensions, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.2.UI, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.2.Web, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.2.Wizard, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraDiagram.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v16.2.Core, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v16.2.Presets, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v16.2.Win, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraMap.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPdfViewer.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v16.2.Extensions, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v16.2.Extensions, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v16.2.Reporting, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v16.2.Reporting.Extensions, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v16.2.Core, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraWizard.v16.2, Version=16.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common.cs" />
+    <Compile Include="ConnDB.cs" />
+    <Compile Include="Encrypt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Encrypt.Designer.cs">
+      <DependentUpon>Encrypt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EncryptUtility.cs" />
+    <Compile Include="MainForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm2.Designer.cs">
+      <DependentUpon>MainForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="临时工管理\TempEmpStatusNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="临时工管理\TempEmpStatusNote.Designer.cs">
+      <DependentUpon>TempEmpStatusNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="临时工管理\TempEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="临时工管理\TempEmp.Designer.cs">
+      <DependentUpon>TempEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="临时工管理\TempEmpAttSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="临时工管理\TempEmpAttSalary.Designer.cs">
+      <DependentUpon>TempEmpAttSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="临时工管理\TempEmpAttReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="临时工管理\TempEmpAttReport.Designer.cs">
+      <DependentUpon>TempEmpAttReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\TempEmpTravelExpense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\TempEmpTravelExpense.Designer.cs">
+      <DependentUpon>TempEmpTravelExpense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\TempEmpTravelExpenseInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\TempEmpTravelExpenseInsert.Designer.cs">
+      <DependentUpon>TempEmpTravelExpenseInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\TempEmpTravelExpenseQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\TempEmpTravelExpenseQuery.Designer.cs">
+      <DependentUpon>TempEmpTravelExpenseQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\TempEmpTravelExpenseUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\TempEmpTravelExpenseUpdate.Designer.cs">
+      <DependentUpon>TempEmpTravelExpenseUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="季度信息\CostRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="季度信息\CostRate.Designer.cs">
+      <DependentUpon>CostRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="季度信息\CostRateInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="季度信息\CostRateInsert.Designer.cs">
+      <DependentUpon>CostRateInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="季度信息\CostRateQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="季度信息\CostRateQuery.Designer.cs">
+      <DependentUpon>CostRateQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="季度信息\CostRateUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="季度信息\CostRateUpdate.Designer.cs">
+      <DependentUpon>CostRateUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算EMS ASY\SMTHHCostDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算EMS ASY\SMTHHCostDay.Designer.cs">
+      <DependentUpon>SMTHHCostDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算EMS ASY\SMTHHCostDayChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算EMS ASY\SMTHHCostDayChart.Designer.cs">
+      <DependentUpon>SMTHHCostDayChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算EMS ASY\SMTHHCostDeptDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算EMS ASY\SMTHHCostDeptDay.Designer.cs">
+      <DependentUpon>SMTHHCostDeptDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算EMS ASY\SMTHHCostDeptDayChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算EMS ASY\SMTHHCostDeptDayChart.Designer.cs">
+      <DependentUpon>SMTHHCostDeptDayChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算EMS ASY\SMTHHCostDeptMonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算EMS ASY\SMTHHCostDeptMonth.Designer.cs">
+      <DependentUpon>SMTHHCostDeptMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算EMS ASY\SMTHHCosting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算EMS ASY\SMTHHCosting.Designer.cs">
+      <DependentUpon>SMTHHCosting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算EMS ASY\SMTHHCostMonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算EMS ASY\SMTHHCostMonth.Designer.cs">
+      <DependentUpon>SMTHHCostMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算系统\SystemCostDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算系统\SystemCostDay.Designer.cs">
+      <DependentUpon>SystemCostDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算系统\SystemCostDayChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算系统\SystemCostDayChart.Designer.cs">
+      <DependentUpon>SystemCostDayChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算系统\SystemCostDeptDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算系统\SystemCostDeptDay.Designer.cs">
+      <DependentUpon>SystemCostDeptDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算系统\SystemCostDeptDayChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算系统\SystemCostDeptDayChart.Designer.cs">
+      <DependentUpon>SystemCostDeptDayChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算系统\SystemCostDeptMonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算系统\SystemCostDeptMonth.Designer.cs">
+      <DependentUpon>SystemCostDeptMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算系统\SystemCosting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算系统\SystemCosting.Designer.cs">
+      <DependentUpon>SystemCosting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算系统\SystemCostMonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算系统\SystemCostMonth.Designer.cs">
+      <DependentUpon>SystemCostMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算终端\ProductCostDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算终端\ProductCostDay.Designer.cs">
+      <DependentUpon>ProductCostDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算终端\ProductCostDayChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算终端\ProductCostDayChart.Designer.cs">
+      <DependentUpon>ProductCostDayChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算终端\ProductCostDeptDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算终端\ProductCostDeptDay.Designer.cs">
+      <DependentUpon>ProductCostDeptDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算终端\ProductCostDeptDayChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算终端\ProductCostDeptDayChart.Designer.cs">
+      <DependentUpon>ProductCostDeptDayChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算终端\ProductCostDeptMonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算终端\ProductCostDeptMonth.Designer.cs">
+      <DependentUpon>ProductCostDeptMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算终端\ProductCosting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算终端\ProductCosting.Designer.cs">
+      <DependentUpon>ProductCosting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算终端\ProductCostMonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算终端\ProductCostMonth.Designer.cs">
+      <DependentUpon>ProductCostMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日信息\CostTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日信息\CostTransfer.Designer.cs">
+      <DependentUpon>CostTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\InDirectLabourLevelPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\InDirectLabourLevelPrice.Designer.cs">
+      <DependentUpon>InDirectLabourLevelPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\InDirectLabourLevelPriceInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\InDirectLabourLevelPriceInsert.Designer.cs">
+      <DependentUpon>InDirectLabourLevelPriceInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\InDirectLabourLevelPriceQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\InDirectLabourLevelPriceQuery.Designer.cs">
+      <DependentUpon>InDirectLabourLevelPriceQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\InDirectLabourLevelPriceUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\InDirectLabourLevelPriceUpdate.Designer.cs">
+      <DependentUpon>InDirectLabourLevelPriceUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="季度信息\TransferPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="季度信息\TransferPrice.Designer.cs">
+      <DependentUpon>TransferPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="季度信息\TransferPriceInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="季度信息\TransferPriceInsert.Designer.cs">
+      <DependentUpon>TransferPriceInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="季度信息\TransferPriceQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="季度信息\TransferPriceQuery.Designer.cs">
+      <DependentUpon>TransferPriceQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="季度信息\TransferPriceUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="季度信息\TransferPriceUpdate.Designer.cs">
+      <DependentUpon>TransferPriceUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日信息\CostTransferInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日信息\CostTransferInsert.Designer.cs">
+      <DependentUpon>CostTransferInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日信息\CostTransferQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日信息\CostTransferQuery.Designer.cs">
+      <DependentUpon>CostTransferQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日信息\ProductQuantity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日信息\ProductQuantity.Designer.cs">
+      <DependentUpon>ProductQuantity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日信息\ProductQuantityInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日信息\ProductQuantityInsert.Designer.cs">
+      <DependentUpon>ProductQuantityInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日信息\ProductQuantityQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日信息\ProductQuantityQuery.Designer.cs">
+      <DependentUpon>ProductQuantityQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日信息\TempWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日信息\TempWorker.Designer.cs">
+      <DependentUpon>TempWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日信息\TempWorkerInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日信息\TempWorkerInsert.Designer.cs">
+      <DependentUpon>TempWorkerInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日信息\TempWorkerQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日信息\TempWorkerQuery.Designer.cs">
+      <DependentUpon>TempWorkerQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日信息\ChannelQuantity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日信息\ChannelQuantity.Designer.cs">
+      <DependentUpon>ChannelQuantity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日信息\ChannelQuantityInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日信息\ChannelQuantityInsert.Designer.cs">
+      <DependentUpon>ChannelQuantityInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日信息\ChannelQuantityQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日信息\ChannelQuantityQuery.Designer.cs">
+      <DependentUpon>ChannelQuantityQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="权限管理\Logon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="权限管理\Logon.Designer.cs">
+      <DependentUpon>Logon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="权限管理\UserRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="权限管理\UserRole.Designer.cs">
+      <DependentUpon>UserRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="权限管理\RolePermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="权限管理\RolePermission.Designer.cs">
+      <DependentUpon>RolePermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="权限管理\ChangePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="权限管理\ChangePass.Designer.cs">
+      <DependentUpon>ChangePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="权限管理\UserPassReset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="权限管理\UserPassReset.Designer.cs">
+      <DependentUpon>UserPassReset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="权限管理\UserUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="权限管理\UserUpdate.Designer.cs">
+      <DependentUpon>UserUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="权限管理\User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="权限管理\User.Designer.cs">
+      <DependentUpon>User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="权限管理\UserInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="权限管理\UserInsert.Designer.cs">
+      <DependentUpon>UserInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="权限管理\UserQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="权限管理\UserQuery.Designer.cs">
+      <DependentUpon>UserQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="权限管理\Role.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="权限管理\Role.Designer.cs">
+      <DependentUpon>Role.cs</DependentUpon>
+    </Compile>
+    <Compile Include="权限管理\RoleInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="权限管理\RoleInsert.Designer.cs">
+      <DependentUpon>RoleInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="权限管理\RoleQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="权限管理\RoleQuery.Designer.cs">
+      <DependentUpon>RoleQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="权限管理\RoleUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="权限管理\RoleUpdate.Designer.cs">
+      <DependentUpon>RoleUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\DeptMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\DeptMap.Designer.cs">
+      <DependentUpon>DeptMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\DeptMapInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\DeptMapInsert.Designer.cs">
+      <DependentUpon>DeptMapInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\DeptMapQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\DeptMapQuery.Designer.cs">
+      <DependentUpon>DeptMapQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\DeptMapUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\DeptMapUpdate.Designer.cs">
+      <DependentUpon>DeptMapUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日信息\AttendanceImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日信息\AttendanceImport.Designer.cs">
+      <DependentUpon>AttendanceImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日信息\ProductQuantityImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日信息\ProductQuantityImport.Designer.cs">
+      <DependentUpon>ProductQuantityImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\HHStandardHours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\HHStandardHours.Designer.cs">
+      <DependentUpon>HHStandardHours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日信息\HHImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日信息\HHImport.Designer.cs">
+      <DependentUpon>HHImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\EmpLevelImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\EmpLevelImport.Designer.cs">
+      <DependentUpon>EmpLevelImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="季度信息\CostDeptRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="季度信息\CostDeptRate.Designer.cs">
+      <DependentUpon>CostDeptRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="季度信息\CostDeptRateInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="季度信息\CostDeptRateInsert.Designer.cs">
+      <DependentUpon>CostDeptRateInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="季度信息\CostDeptRateQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="季度信息\CostDeptRateQuery.Designer.cs">
+      <DependentUpon>CostDeptRateQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="季度信息\CostDeptRateUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="季度信息\CostDeptRateUpdate.Designer.cs">
+      <DependentUpon>CostDeptRateUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="临时工管理\TempEmpImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="临时工管理\TempEmpImport.Designer.cs">
+      <DependentUpon>TempEmpImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="季度信息\QuantityRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="季度信息\QuantityRate.Designer.cs">
+      <DependentUpon>QuantityRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="季度信息\QuantityRateInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="季度信息\QuantityRateInsert.Designer.cs">
+      <DependentUpon>QuantityRateInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="季度信息\QuantityRateQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="季度信息\QuantityRateQuery.Designer.cs">
+      <DependentUpon>QuantityRateQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="季度信息\QuantityRateUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="季度信息\QuantityRateUpdate.Designer.cs">
+      <DependentUpon>QuantityRateUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\Festival.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\Festival.Designer.cs">
+      <DependentUpon>Festival.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\FestivalInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\FestivalInsert.Designer.cs">
+      <DependentUpon>FestivalInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\FestivalQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\FestivalQuery.Designer.cs">
+      <DependentUpon>FestivalQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\FestivalUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\FestivalUpdate.Designer.cs">
+      <DependentUpon>FestivalUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算EMS SMT\EMSSMTCostDayPointChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算EMS SMT\EMSSMTCostDayPointChart.Designer.cs">
+      <DependentUpon>EMSSMTCostDayPointChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算EMS SMT\EMSSMTCostDeptDayPointChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算EMS SMT\EMSSMTCostDeptDayPointChart.Designer.cs">
+      <DependentUpon>EMSSMTCostDeptDayPointChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算终端\ProductCostDayPointChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算终端\ProductCostDayPointChart.Designer.cs">
+      <DependentUpon>ProductCostDayPointChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算终端\ProductCostDeptDayPointChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算终端\ProductCostDeptDayPointChart.Designer.cs">
+      <DependentUpon>ProductCostDeptDayPointChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日信息\MatlQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日信息\MatlQuery.Designer.cs">
+      <DependentUpon>MatlQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="测试\MatlPriceImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="测试\MatlPriceImport.Designer.cs">
+      <DependentUpon>MatlPriceImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="测试\SMTCost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="测试\SMTCost.Designer.cs">
+      <DependentUpon>SMTCost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算主营SMT\SMTCostDeptDayChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算主营SMT\SMTCostDeptDayChart.Designer.cs">
+      <DependentUpon>SMTCostDeptDayChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算主营SMT\SMTCostDayChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算主营SMT\SMTCostDayChart.Designer.cs">
+      <DependentUpon>SMTCostDayChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算主营SMT\SMTCostDeptDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算主营SMT\SMTCostDeptDay.Designer.cs">
+      <DependentUpon>SMTCostDeptDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算主营SMT\SMTCostDeptMonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算主营SMT\SMTCostDeptMonth.Designer.cs">
+      <DependentUpon>SMTCostDeptMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算主营SMT\SMTCostMonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算主营SMT\SMTCostMonth.Designer.cs">
+      <DependentUpon>SMTCostMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算主营SMT\SMTCostDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算主营SMT\SMTCostDay.Designer.cs">
+      <DependentUpon>SMTCostDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算主营SMT\SMTCosting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算主营SMT\SMTCosting.Designer.cs">
+      <DependentUpon>SMTCosting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\SpecialDeal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\SpecialDeal.Designer.cs">
+      <DependentUpon>SpecialDeal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\SpecialDealInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\SpecialDealInsert.Designer.cs">
+      <DependentUpon>SpecialDealInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\SpecialDealQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\SpecialDealQuery.Designer.cs">
+      <DependentUpon>SpecialDealQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\SpecialDealUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\SpecialDealUpdate.Designer.cs">
+      <DependentUpon>SpecialDealUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\TempWorkerPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\TempWorkerPrice.Designer.cs">
+      <DependentUpon>TempWorkerPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\TempWorkerPriceInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\TempWorkerPriceInsert.Designer.cs">
+      <DependentUpon>TempWorkerPriceInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\TempWorkerPriceQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\TempWorkerPriceQuery.Designer.cs">
+      <DependentUpon>TempWorkerPriceQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\TempWorkerPriceUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\TempWorkerPriceUpdate.Designer.cs">
+      <DependentUpon>TempWorkerPriceUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\CompositeExpense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\CompositeExpense.Designer.cs">
+      <DependentUpon>CompositeExpense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\CompositeExpenseInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\CompositeExpenseInsert.Designer.cs">
+      <DependentUpon>CompositeExpenseInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\CompositeExpenseQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\CompositeExpenseQuery.Designer.cs">
+      <DependentUpon>CompositeExpenseQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\CompositeExpenseUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\CompositeExpenseUpdate.Designer.cs">
+      <DependentUpon>CompositeExpenseUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="临时工管理\TempEmpInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="临时工管理\TempEmpInsert.Designer.cs">
+      <DependentUpon>TempEmpInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="临时工管理\TempEmpQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="临时工管理\TempEmpQuery.Designer.cs">
+      <DependentUpon>TempEmpQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="临时工管理\TempEmpUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="临时工管理\TempEmpUpdate.Designer.cs">
+      <DependentUpon>TempEmpUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="临时工管理\TempEmpAtt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="临时工管理\TempEmpAtt.Designer.cs">
+      <DependentUpon>TempEmpAtt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="临时工管理\TempEmpAttQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="临时工管理\TempEmpAttQuery.Designer.cs">
+      <DependentUpon>TempEmpAttQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="临时工管理\TempEmpAttUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="临时工管理\TempEmpAttUpdate.Designer.cs">
+      <DependentUpon>TempEmpAttUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\Shift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\Shift.Designer.cs">
+      <DependentUpon>Shift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\ShiftInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\ShiftInsert.Designer.cs">
+      <DependentUpon>ShiftInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\ShiftQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\ShiftQuery.Designer.cs">
+      <DependentUpon>ShiftQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\ShiftUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\ShiftUpdate.Designer.cs">
+      <DependentUpon>ShiftUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\TempEmpPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\TempEmpPrice.Designer.cs">
+      <DependentUpon>TempEmpPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算主营SMT\SMTCostDayPointChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算主营SMT\SMTCostDayPointChart.Designer.cs">
+      <DependentUpon>SMTCostDayPointChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="权限管理\UserDeptCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="权限管理\UserDeptCheck.Designer.cs">
+      <DependentUpon>UserDeptCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="权限管理\UserDeptCheckInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="权限管理\UserDeptCheckInsert.Designer.cs">
+      <DependentUpon>UserDeptCheckInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="权限管理\UserDeptCheckQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="权限管理\UserDeptCheckQuery.Designer.cs">
+      <DependentUpon>UserDeptCheckQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="权限管理\UserDeptCheckUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="权限管理\UserDeptCheckUpdate.Designer.cs">
+      <DependentUpon>UserDeptCheckUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\TempEmpPriceInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\TempEmpPriceInsert.Designer.cs">
+      <DependentUpon>TempEmpPriceInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\TempEmpPriceQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\TempEmpPriceQuery.Designer.cs">
+      <DependentUpon>TempEmpPriceQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\TempEmpPriceUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\TempEmpPriceUpdate.Designer.cs">
+      <DependentUpon>TempEmpPriceUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算主营SMT\SMTCostDeptDayPointChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算主营SMT\SMTCostDeptDayPointChart.Designer.cs">
+      <DependentUpon>SMTCostDeptDayPointChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算EMS ASY\SMTHHCostDayPointChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算EMS ASY\SMTHHCostDayPointChart.Designer.cs">
+      <DependentUpon>SMTHHCostDayPointChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算EMS ASY\SMTHHCostDeptDayPointChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算EMS ASY\SMTHHCostDeptDayPointChart.Designer.cs">
+      <DependentUpon>SMTHHCostDeptDayPointChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算系统\SystemCostDayPointChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算系统\SystemCostDayPointChart.Designer.cs">
+      <DependentUpon>SystemCostDayPointChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算系统\SystemCostDeptDayPointChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算系统\SystemCostDeptDayPointChart.Designer.cs">
+      <DependentUpon>SystemCostDeptDayPointChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\TempEmpStandardPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\TempEmpStandardPrice.Designer.cs">
+      <DependentUpon>TempEmpStandardPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\TempEmpStandardPriceInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\TempEmpStandardPriceInsert.Designer.cs">
+      <DependentUpon>TempEmpStandardPriceInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\TempEmpStandardPriceQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\TempEmpStandardPriceQuery.Designer.cs">
+      <DependentUpon>TempEmpStandardPriceQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\TempEmpStandardPriceUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\TempEmpStandardPriceUpdate.Designer.cs">
+      <DependentUpon>TempEmpStandardPriceUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\TempEmpExpense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\TempEmpExpense.Designer.cs">
+      <DependentUpon>TempEmpExpense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\TempEmpExpenseInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\TempEmpExpenseInsert.Designer.cs">
+      <DependentUpon>TempEmpExpenseInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\TempEmpExpenseQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\TempEmpExpenseQuery.Designer.cs">
+      <DependentUpon>TempEmpExpenseQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\TempEmpExpenseUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\TempEmpExpenseUpdate.Designer.cs">
+      <DependentUpon>TempEmpExpenseUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="临时工管理\TempEmpStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="临时工管理\TempEmpStatus.Designer.cs">
+      <DependentUpon>TempEmpStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="临时工管理\TempEmpAttSalarySum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="临时工管理\TempEmpAttSalarySum.Designer.cs">
+      <DependentUpon>TempEmpAttSalarySum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="临时工管理\TempEmpImportUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="临时工管理\TempEmpImportUpdate.Designer.cs">
+      <DependentUpon>TempEmpImportUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="临时工管理\TempEmpClose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="临时工管理\TempEmpClose.Designer.cs">
+      <DependentUpon>TempEmpClose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="测试\XtraForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="测试\XtraForm1.Designer.cs">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日信息\PointCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日信息\PointCount.Designer.cs">
+      <DependentUpon>PointCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日信息\PointCountSum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日信息\PointCountSum.Designer.cs">
+      <DependentUpon>PointCountSum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日信息\PointCountRaw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日信息\PointCountRaw.Designer.cs">
+      <DependentUpon>PointCountRaw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日信息\IndirectLabourAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日信息\IndirectLabourAttendance.Designer.cs">
+      <DependentUpon>IndirectLabourAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日信息\DirectLabourAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日信息\DirectLabourAttendance.Designer.cs">
+      <DependentUpon>DirectLabourAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日信息\EmsHhHours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日信息\EmsHhHours.Designer.cs">
+      <DependentUpon>EmsHhHours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日信息\EmsHhHoursInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日信息\EmsHhHoursInsert.Designer.cs">
+      <DependentUpon>EmsHhHoursInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日信息\EmsHhHoursQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日信息\EmsHhHoursQuery.Designer.cs">
+      <DependentUpon>EmsHhHoursQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\DeptStandardPoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\DeptStandardPoint.Designer.cs">
+      <DependentUpon>DeptStandardPoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\DeptStandardPointInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\DeptStandardPointInsert.Designer.cs">
+      <DependentUpon>DeptStandardPointInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\DeptStandardPointQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\DeptStandardPointQuery.Designer.cs">
+      <DependentUpon>DeptStandardPointQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\DeptStandardPointUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\DeptStandardPointUpdate.Designer.cs">
+      <DependentUpon>DeptStandardPointUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\StandardPoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\StandardPoint.Designer.cs">
+      <DependentUpon>StandardPoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\StandardPointInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\StandardPointInsert.Designer.cs">
+      <DependentUpon>StandardPointInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\StandardPointQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\StandardPointQuery.Designer.cs">
+      <DependentUpon>StandardPointQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\StandardPointUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\StandardPointUpdate.Designer.cs">
+      <DependentUpon>StandardPointUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\SteelNetRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\SteelNetRate.Designer.cs">
+      <DependentUpon>SteelNetRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\SteelNetRateInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\SteelNetRateInsert.Designer.cs">
+      <DependentUpon>SteelNetRateInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\SteelNetRateQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\SteelNetRateQuery.Designer.cs">
+      <DependentUpon>SteelNetRateQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\SteelNetRateUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\SteelNetRateUpdate.Designer.cs">
+      <DependentUpon>SteelNetRateUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\WaterElectricityUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\WaterElectricityUpdate.Designer.cs">
+      <DependentUpon>WaterElectricityUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\WaterElectricityQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\WaterElectricityQuery.Designer.cs">
+      <DependentUpon>WaterElectricityQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\WaterElectricityInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\WaterElectricityInsert.Designer.cs">
+      <DependentUpon>WaterElectricityInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\WaterElectricity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\WaterElectricity.Designer.cs">
+      <DependentUpon>WaterElectricity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\RentExpenseUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\RentExpenseUpdate.Designer.cs">
+      <DependentUpon>RentExpenseUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\RentExpenseQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\RentExpenseQuery.Designer.cs">
+      <DependentUpon>RentExpenseQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\RentExpenseInsert .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\RentExpenseInsert .Designer.cs">
+      <DependentUpon>RentExpenseInsert .cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\RentExpense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\RentExpense.Designer.cs">
+      <DependentUpon>RentExpense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\Depreciation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\Depreciation.Designer.cs">
+      <DependentUpon>Depreciation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\DepreciationInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\DepreciationInsert.Designer.cs">
+      <DependentUpon>DepreciationInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\DepreciationQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\DepreciationQuery.Designer.cs">
+      <DependentUpon>DepreciationQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\DepreciationUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\DepreciationUpdate.Designer.cs">
+      <DependentUpon>DepreciationUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\IndirectLabourPriceUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\IndirectLabourPriceUpdate.Designer.cs">
+      <DependentUpon>IndirectLabourPriceUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\IndirectLabourPriceQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\IndirectLabourPriceQuery.Designer.cs">
+      <DependentUpon>IndirectLabourPriceQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\IndirectLabourPriceInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\IndirectLabourPriceInsert.Designer.cs">
+      <DependentUpon>IndirectLabourPriceInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\IndirectLabourPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\IndirectLabourPrice.Designer.cs">
+      <DependentUpon>IndirectLabourPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\DirectLabourPriceInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\DirectLabourPriceInsert.Designer.cs">
+      <DependentUpon>DirectLabourPriceInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\DirectLabourPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\DirectLabourPrice.Designer.cs">
+      <DependentUpon>DirectLabourPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\IndirectLabourUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\IndirectLabourUpdate.Designer.cs">
+      <DependentUpon>IndirectLabourUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\IndirectLabourQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\IndirectLabourQuery.Designer.cs">
+      <DependentUpon>IndirectLabourQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\IndirectLabourInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\IndirectLabourInsert.Designer.cs">
+      <DependentUpon>IndirectLabourInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\IndirectLabour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\IndirectLabour.Designer.cs">
+      <DependentUpon>IndirectLabour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\DirectLabour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\DirectLabour.Designer.cs">
+      <DependentUpon>DirectLabour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\DirectLabourInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\DirectLabourInsert.Designer.cs">
+      <DependentUpon>DirectLabourInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\DirectLabourQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\DirectLabourQuery.Designer.cs">
+      <DependentUpon>DirectLabourQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\DirectLabourUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\DirectLabourUpdate.Designer.cs">
+      <DependentUpon>DirectLabourUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\WorkType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\WorkType.Designer.cs">
+      <DependentUpon>WorkType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\WorkTypeUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\WorkTypeUpdate.Designer.cs">
+      <DependentUpon>WorkTypeUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\WorkTypeQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\WorkTypeQuery.Designer.cs">
+      <DependentUpon>WorkTypeQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\WorkTypeInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\WorkTypeInsert.Designer.cs">
+      <DependentUpon>WorkTypeInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\PositionUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\PositionUpdate.Designer.cs">
+      <DependentUpon>PositionUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\PositionQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\PositionQuery.Designer.cs">
+      <DependentUpon>PositionQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\PositionInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\PositionInsert.Designer.cs">
+      <DependentUpon>PositionInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\Position.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\Position.Designer.cs">
+      <DependentUpon>Position.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\Dept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\Dept.Designer.cs">
+      <DependentUpon>Dept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\DeptInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\DeptInsert.Designer.cs">
+      <DependentUpon>DeptInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\LineTypeInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\LineTypeInsert.Designer.cs">
+      <DependentUpon>LineTypeInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\DeptQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\DeptQuery.Designer.cs">
+      <DependentUpon>DeptQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\LineTypeQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\LineTypeQuery.Designer.cs">
+      <DependentUpon>LineTypeQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\DeptUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\DeptUpdate.Designer.cs">
+      <DependentUpon>DeptUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\LineTypeUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\LineTypeUpdate.Designer.cs">
+      <DependentUpon>LineTypeUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyMessageBox.Designer.cs">
+      <DependentUpon>MyMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\LineType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\LineType.Designer.cs">
+      <DependentUpon>LineType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\SaleType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\SaleType.Designer.cs">
+      <DependentUpon>SaleType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\SaleTypeInsert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\SaleTypeInsert.Designer.cs">
+      <DependentUpon>SaleTypeInsert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\SaleTypeQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\SaleTypeQuery.Designer.cs">
+      <DependentUpon>SaleTypeQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="基础资料\SaleTypeUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="基础资料\SaleTypeUpdate.Designer.cs">
+      <DependentUpon>SaleTypeUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="月度信息\DirectLabourPriceQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\DirectLabourPriceQuery.Designer.cs">
+      <DependentUpon>DirectLabourPriceQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="月度信息\DirectLabourPriceUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="月度信息\DirectLabourPriceUpdate.Designer.cs">
+      <DependentUpon>DirectLabourPriceUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算EMS SMT\EMSSMTCostDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算EMS SMT\EMSSMTCostDay.Designer.cs">
+      <DependentUpon>EMSSMTCostDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算EMS SMT\EMSSMTCostDayChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算EMS SMT\EMSSMTCostDayChart.Designer.cs">
+      <DependentUpon>EMSSMTCostDayChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算EMS SMT\EMSSMTCostDeptDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算EMS SMT\EMSSMTCostDeptDay.Designer.cs">
+      <DependentUpon>EMSSMTCostDeptDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算EMS SMT\EMSSMTCostDeptDayChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算EMS SMT\EMSSMTCostDeptDayChart.Designer.cs">
+      <DependentUpon>EMSSMTCostDeptDayChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算EMS SMT\EMSSMTCostDeptMonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算EMS SMT\EMSSMTCostDeptMonth.Designer.cs">
+      <DependentUpon>EMSSMTCostDeptMonth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算EMS SMT\EMSSMTCosting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算EMS SMT\EMSSMTCosting.Designer.cs">
+      <DependentUpon>EMSSMTCosting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="成本计算EMS SMT\EMSSMTCostMonth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="成本计算EMS SMT\EMSSMTCostMonth.Designer.cs">
+      <DependentUpon>EMSSMTCostMonth.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Encrypt.resx">
+      <DependentUpon>Encrypt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm2.resx">
+      <DependentUpon>MainForm2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="临时工管理\TempEmpStatusNote.resx">
+      <DependentUpon>TempEmpStatusNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="临时工管理\TempEmp.resx">
+      <DependentUpon>TempEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="临时工管理\TempEmpAttSalary.resx">
+      <DependentUpon>TempEmpAttSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="临时工管理\TempEmpAttReport.resx">
+      <DependentUpon>TempEmpAttReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\TempEmpTravelExpense.resx">
+      <DependentUpon>TempEmpTravelExpense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\TempEmpTravelExpenseInsert.resx">
+      <DependentUpon>TempEmpTravelExpenseInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\TempEmpTravelExpenseQuery.resx">
+      <DependentUpon>TempEmpTravelExpenseQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\TempEmpTravelExpenseUpdate.resx">
+      <DependentUpon>TempEmpTravelExpenseUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="季度信息\CostRate.resx">
+      <DependentUpon>CostRate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="季度信息\CostRateInsert.resx">
+      <DependentUpon>CostRateInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="季度信息\CostRateQuery.resx">
+      <DependentUpon>CostRateQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="季度信息\CostRateUpdate.resx">
+      <DependentUpon>CostRateUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算EMS ASY\SMTHHCostDay.resx">
+      <DependentUpon>SMTHHCostDay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算EMS ASY\SMTHHCostDayChart.resx">
+      <DependentUpon>SMTHHCostDayChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算EMS ASY\SMTHHCostDeptDay.resx">
+      <DependentUpon>SMTHHCostDeptDay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算EMS ASY\SMTHHCostDeptDayChart.resx">
+      <DependentUpon>SMTHHCostDeptDayChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算EMS ASY\SMTHHCostDeptMonth.resx">
+      <DependentUpon>SMTHHCostDeptMonth.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算EMS ASY\SMTHHCosting.resx">
+      <DependentUpon>SMTHHCosting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算EMS ASY\SMTHHCostMonth.resx">
+      <DependentUpon>SMTHHCostMonth.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算系统\SystemCostDay.resx">
+      <DependentUpon>SystemCostDay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算系统\SystemCostDayChart.resx">
+      <DependentUpon>SystemCostDayChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算系统\SystemCostDeptDay.resx">
+      <DependentUpon>SystemCostDeptDay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算系统\SystemCostDeptDayChart.resx">
+      <DependentUpon>SystemCostDeptDayChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算系统\SystemCostDeptMonth.resx">
+      <DependentUpon>SystemCostDeptMonth.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算系统\SystemCosting.resx">
+      <DependentUpon>SystemCosting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算系统\SystemCostMonth.resx">
+      <DependentUpon>SystemCostMonth.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算终端\ProductCostDay.resx">
+      <DependentUpon>ProductCostDay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算终端\ProductCostDayChart.resx">
+      <DependentUpon>ProductCostDayChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算终端\ProductCostDeptDay.resx">
+      <DependentUpon>ProductCostDeptDay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算终端\ProductCostDeptDayChart.resx">
+      <DependentUpon>ProductCostDeptDayChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算终端\ProductCostDeptMonth.resx">
+      <DependentUpon>ProductCostDeptMonth.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算终端\ProductCosting.resx">
+      <DependentUpon>ProductCosting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算终端\ProductCostMonth.resx">
+      <DependentUpon>ProductCostMonth.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日信息\CostTransfer.resx">
+      <DependentUpon>CostTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\InDirectLabourLevelPrice.resx">
+      <DependentUpon>InDirectLabourLevelPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\InDirectLabourLevelPriceInsert.resx">
+      <DependentUpon>InDirectLabourLevelPriceInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\InDirectLabourLevelPriceQuery.resx">
+      <DependentUpon>InDirectLabourLevelPriceQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\InDirectLabourLevelPriceUpdate.resx">
+      <DependentUpon>InDirectLabourLevelPriceUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="季度信息\TransferPrice.resx">
+      <DependentUpon>TransferPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="季度信息\TransferPriceInsert.resx">
+      <DependentUpon>TransferPriceInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="季度信息\TransferPriceQuery.resx">
+      <DependentUpon>TransferPriceQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="季度信息\TransferPriceUpdate.resx">
+      <DependentUpon>TransferPriceUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日信息\CostTransferInsert.resx">
+      <DependentUpon>CostTransferInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日信息\CostTransferQuery.resx">
+      <DependentUpon>CostTransferQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日信息\ProductQuantity.resx">
+      <DependentUpon>ProductQuantity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日信息\ProductQuantityInsert.resx">
+      <DependentUpon>ProductQuantityInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日信息\ProductQuantityQuery.resx">
+      <DependentUpon>ProductQuantityQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日信息\TempWorker.resx">
+      <DependentUpon>TempWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日信息\TempWorkerInsert.resx">
+      <DependentUpon>TempWorkerInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日信息\TempWorkerQuery.resx">
+      <DependentUpon>TempWorkerQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日信息\ChannelQuantity.resx">
+      <DependentUpon>ChannelQuantity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日信息\ChannelQuantityInsert.resx">
+      <DependentUpon>ChannelQuantityInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日信息\ChannelQuantityQuery.resx">
+      <DependentUpon>ChannelQuantityQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="权限管理\Logon.resx">
+      <DependentUpon>Logon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="权限管理\UserRole.resx">
+      <DependentUpon>UserRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="权限管理\RolePermission.resx">
+      <DependentUpon>RolePermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="权限管理\ChangePass.resx">
+      <DependentUpon>ChangePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="权限管理\UserPassReset.resx">
+      <DependentUpon>UserPassReset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="权限管理\UserUpdate.resx">
+      <DependentUpon>UserUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="权限管理\User.resx">
+      <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="权限管理\UserInsert.resx">
+      <DependentUpon>UserInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="权限管理\UserQuery.resx">
+      <DependentUpon>UserQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="权限管理\Role.resx">
+      <DependentUpon>Role.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="权限管理\RoleInsert.resx">
+      <DependentUpon>RoleInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="权限管理\RoleQuery.resx">
+      <DependentUpon>RoleQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="权限管理\RoleUpdate.resx">
+      <DependentUpon>RoleUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\DeptMap.resx">
+      <DependentUpon>DeptMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\DeptMapInsert.resx">
+      <DependentUpon>DeptMapInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\DeptMapQuery.resx">
+      <DependentUpon>DeptMapQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\DeptMapUpdate.resx">
+      <DependentUpon>DeptMapUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日信息\AttendanceImport.resx">
+      <DependentUpon>AttendanceImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日信息\ProductQuantityImport.resx">
+      <DependentUpon>ProductQuantityImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\HHStandardHours.resx">
+      <DependentUpon>HHStandardHours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日信息\HHImport.resx">
+      <DependentUpon>HHImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\EmpLevelImport.resx">
+      <DependentUpon>EmpLevelImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="季度信息\CostDeptRate.resx">
+      <DependentUpon>CostDeptRate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="季度信息\CostDeptRateInsert.resx">
+      <DependentUpon>CostDeptRateInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="季度信息\CostDeptRateQuery.resx">
+      <DependentUpon>CostDeptRateQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="季度信息\CostDeptRateUpdate.resx">
+      <DependentUpon>CostDeptRateUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="临时工管理\TempEmpImport.resx">
+      <DependentUpon>TempEmpImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="季度信息\QuantityRate.resx">
+      <DependentUpon>QuantityRate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="季度信息\QuantityRateInsert.resx">
+      <DependentUpon>QuantityRateInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="季度信息\QuantityRateQuery.resx">
+      <DependentUpon>QuantityRateQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="季度信息\QuantityRateUpdate.resx">
+      <DependentUpon>QuantityRateUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\Festival.resx">
+      <DependentUpon>Festival.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\FestivalInsert.resx">
+      <DependentUpon>FestivalInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\FestivalQuery.resx">
+      <DependentUpon>FestivalQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\FestivalUpdate.resx">
+      <DependentUpon>FestivalUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算EMS SMT\EMSSMTCostDayPointChart.resx">
+      <DependentUpon>EMSSMTCostDayPointChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算EMS SMT\EMSSMTCostDeptDayPointChart.resx">
+      <DependentUpon>EMSSMTCostDeptDayPointChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算终端\ProductCostDayPointChart.resx">
+      <DependentUpon>ProductCostDayPointChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算终端\ProductCostDeptDayPointChart.resx">
+      <DependentUpon>ProductCostDeptDayPointChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日信息\MatlQuery.resx">
+      <DependentUpon>MatlQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="测试\MatlPriceImport.resx">
+      <DependentUpon>MatlPriceImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="测试\SMTCost.resx">
+      <DependentUpon>SMTCost.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算主营SMT\SMTCostDeptDayChart.resx">
+      <DependentUpon>SMTCostDeptDayChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算主营SMT\SMTCostDayChart.resx">
+      <DependentUpon>SMTCostDayChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算主营SMT\SMTCostDeptDay.resx">
+      <DependentUpon>SMTCostDeptDay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算主营SMT\SMTCostDeptMonth.resx">
+      <DependentUpon>SMTCostDeptMonth.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算主营SMT\SMTCostMonth.resx">
+      <DependentUpon>SMTCostMonth.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算主营SMT\SMTCostDay.resx">
+      <DependentUpon>SMTCostDay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算主营SMT\SMTCosting.resx">
+      <DependentUpon>SMTCosting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\SpecialDeal.resx">
+      <DependentUpon>SpecialDeal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\SpecialDealInsert.resx">
+      <DependentUpon>SpecialDealInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\SpecialDealQuery.resx">
+      <DependentUpon>SpecialDealQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\SpecialDealUpdate.resx">
+      <DependentUpon>SpecialDealUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\TempWorkerPrice.resx">
+      <DependentUpon>TempWorkerPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\TempWorkerPriceInsert.resx">
+      <DependentUpon>TempWorkerPriceInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\TempWorkerPriceQuery.resx">
+      <DependentUpon>TempWorkerPriceQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\TempWorkerPriceUpdate.resx">
+      <DependentUpon>TempWorkerPriceUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\CompositeExpense.resx">
+      <DependentUpon>CompositeExpense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\CompositeExpenseInsert.resx">
+      <DependentUpon>CompositeExpenseInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\CompositeExpenseQuery.resx">
+      <DependentUpon>CompositeExpenseQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\CompositeExpenseUpdate.resx">
+      <DependentUpon>CompositeExpenseUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="临时工管理\TempEmpInsert.resx">
+      <DependentUpon>TempEmpInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="临时工管理\TempEmpQuery.resx">
+      <DependentUpon>TempEmpQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="临时工管理\TempEmpUpdate.resx">
+      <DependentUpon>TempEmpUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="临时工管理\TempEmpAtt.resx">
+      <DependentUpon>TempEmpAtt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="临时工管理\TempEmpAttQuery.resx">
+      <DependentUpon>TempEmpAttQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="临时工管理\TempEmpAttUpdate.resx">
+      <DependentUpon>TempEmpAttUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\Shift.resx">
+      <DependentUpon>Shift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\ShiftInsert.resx">
+      <DependentUpon>ShiftInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\ShiftQuery.resx">
+      <DependentUpon>ShiftQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\ShiftUpdate.resx">
+      <DependentUpon>ShiftUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\TempEmpPrice.resx">
+      <DependentUpon>TempEmpPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算主营SMT\SMTCostDayPointChart.resx">
+      <DependentUpon>SMTCostDayPointChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="权限管理\UserDeptCheck.resx">
+      <DependentUpon>UserDeptCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="权限管理\UserDeptCheckInsert.resx">
+      <DependentUpon>UserDeptCheckInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="权限管理\UserDeptCheckQuery.resx">
+      <DependentUpon>UserDeptCheckQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="权限管理\UserDeptCheckUpdate.resx">
+      <DependentUpon>UserDeptCheckUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\TempEmpPriceInsert.resx">
+      <DependentUpon>TempEmpPriceInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\TempEmpPriceQuery.resx">
+      <DependentUpon>TempEmpPriceQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\TempEmpPriceUpdate.resx">
+      <DependentUpon>TempEmpPriceUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算主营SMT\SMTCostDeptDayPointChart.resx">
+      <DependentUpon>SMTCostDeptDayPointChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算EMS ASY\SMTHHCostDayPointChart.resx">
+      <DependentUpon>SMTHHCostDayPointChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算EMS ASY\SMTHHCostDeptDayPointChart.resx">
+      <DependentUpon>SMTHHCostDeptDayPointChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算系统\SystemCostDayPointChart.resx">
+      <DependentUpon>SystemCostDayPointChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算系统\SystemCostDeptDayPointChart.resx">
+      <DependentUpon>SystemCostDeptDayPointChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\TempEmpStandardPrice.resx">
+      <DependentUpon>TempEmpStandardPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\TempEmpStandardPriceInsert.resx">
+      <DependentUpon>TempEmpStandardPriceInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\TempEmpStandardPriceQuery.resx">
+      <DependentUpon>TempEmpStandardPriceQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\TempEmpStandardPriceUpdate.resx">
+      <DependentUpon>TempEmpStandardPriceUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\TempEmpExpense.resx">
+      <DependentUpon>TempEmpExpense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\TempEmpExpenseInsert.resx">
+      <DependentUpon>TempEmpExpenseInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\TempEmpExpenseQuery.resx">
+      <DependentUpon>TempEmpExpenseQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\TempEmpExpenseUpdate.resx">
+      <DependentUpon>TempEmpExpenseUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="临时工管理\TempEmpStatus.resx">
+      <DependentUpon>TempEmpStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="临时工管理\TempEmpAttSalarySum.resx">
+      <DependentUpon>TempEmpAttSalarySum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="临时工管理\TempEmpImportUpdate.resx">
+      <DependentUpon>TempEmpImportUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="临时工管理\TempEmpClose.resx">
+      <DependentUpon>TempEmpClose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="测试\XtraForm1.resx">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日信息\PointCount.resx">
+      <DependentUpon>PointCount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日信息\PointCountSum.resx">
+      <DependentUpon>PointCountSum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日信息\PointCountRaw.resx">
+      <DependentUpon>PointCountRaw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日信息\IndirectLabourAttendance.resx">
+      <DependentUpon>IndirectLabourAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日信息\DirectLabourAttendance.resx">
+      <DependentUpon>DirectLabourAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日信息\EmsHhHours.resx">
+      <DependentUpon>EmsHhHours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日信息\EmsHhHoursInsert.resx">
+      <DependentUpon>EmsHhHoursInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日信息\EmsHhHoursQuery.resx">
+      <DependentUpon>EmsHhHoursQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\DeptStandardPoint.resx">
+      <DependentUpon>DeptStandardPoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\DeptStandardPointInsert.resx">
+      <DependentUpon>DeptStandardPointInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\DeptStandardPointQuery.resx">
+      <DependentUpon>DeptStandardPointQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\DeptStandardPointUpdate.resx">
+      <DependentUpon>DeptStandardPointUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\StandardPoint.resx">
+      <DependentUpon>StandardPoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\StandardPointInsert.resx">
+      <DependentUpon>StandardPointInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\StandardPointQuery.resx">
+      <DependentUpon>StandardPointQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\StandardPointUpdate.resx">
+      <DependentUpon>StandardPointUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\SteelNetRate.resx">
+      <DependentUpon>SteelNetRate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\SteelNetRateInsert.resx">
+      <DependentUpon>SteelNetRateInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\SteelNetRateQuery.resx">
+      <DependentUpon>SteelNetRateQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\SteelNetRateUpdate.resx">
+      <DependentUpon>SteelNetRateUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\WaterElectricityUpdate.resx">
+      <DependentUpon>WaterElectricityUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\WaterElectricityQuery.resx">
+      <DependentUpon>WaterElectricityQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\WaterElectricityInsert.resx">
+      <DependentUpon>WaterElectricityInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\WaterElectricity.resx">
+      <DependentUpon>WaterElectricity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\RentExpenseUpdate.resx">
+      <DependentUpon>RentExpenseUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\RentExpenseQuery.resx">
+      <DependentUpon>RentExpenseQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\RentExpenseInsert .resx">
+      <DependentUpon>RentExpenseInsert .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\RentExpense.resx">
+      <DependentUpon>RentExpense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\Depreciation.resx">
+      <DependentUpon>Depreciation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\DepreciationInsert.resx">
+      <DependentUpon>DepreciationInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\DepreciationQuery.resx">
+      <DependentUpon>DepreciationQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\DepreciationUpdate.resx">
+      <DependentUpon>DepreciationUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\IndirectLabourPriceUpdate.resx">
+      <DependentUpon>IndirectLabourPriceUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\IndirectLabourPriceQuery.resx">
+      <DependentUpon>IndirectLabourPriceQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\IndirectLabourPriceInsert.resx">
+      <DependentUpon>IndirectLabourPriceInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\IndirectLabourPrice.resx">
+      <DependentUpon>IndirectLabourPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\DirectLabourPriceInsert.resx">
+      <DependentUpon>DirectLabourPriceInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\DirectLabourPrice.resx">
+      <DependentUpon>DirectLabourPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\IndirectLabourUpdate.resx">
+      <DependentUpon>IndirectLabourUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\IndirectLabourQuery.resx">
+      <DependentUpon>IndirectLabourQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\IndirectLabourInsert.resx">
+      <DependentUpon>IndirectLabourInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\IndirectLabour.resx">
+      <DependentUpon>IndirectLabour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\DirectLabour.resx">
+      <DependentUpon>DirectLabour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\DirectLabourInsert.resx">
+      <DependentUpon>DirectLabourInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\DirectLabourQuery.resx">
+      <DependentUpon>DirectLabourQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\DirectLabourUpdate.resx">
+      <DependentUpon>DirectLabourUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\WorkType.resx">
+      <DependentUpon>WorkType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\WorkTypeUpdate.resx">
+      <DependentUpon>WorkTypeUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\WorkTypeQuery.resx">
+      <DependentUpon>WorkTypeQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\WorkTypeInsert.resx">
+      <DependentUpon>WorkTypeInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\PositionUpdate.resx">
+      <DependentUpon>PositionUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\PositionQuery.resx">
+      <DependentUpon>PositionQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\PositionInsert.resx">
+      <DependentUpon>PositionInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\Position.resx">
+      <DependentUpon>Position.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\Dept.resx">
+      <DependentUpon>Dept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\DeptInsert.resx">
+      <DependentUpon>DeptInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\LineTypeInsert.resx">
+      <DependentUpon>LineTypeInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\DeptQuery.resx">
+      <DependentUpon>DeptQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\LineTypeQuery.resx">
+      <DependentUpon>LineTypeQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\DeptUpdate.resx">
+      <DependentUpon>DeptUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\LineTypeUpdate.resx">
+      <DependentUpon>LineTypeUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyMessageBox.resx">
+      <DependentUpon>MyMessageBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\LineType.resx">
+      <DependentUpon>LineType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\SaleType.resx">
+      <DependentUpon>SaleType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\SaleTypeInsert.resx">
+      <DependentUpon>SaleTypeInsert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\SaleTypeQuery.resx">
+      <DependentUpon>SaleTypeQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基础资料\SaleTypeUpdate.resx">
+      <DependentUpon>SaleTypeUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="月度信息\DirectLabourPriceQuery.resx">
+      <DependentUpon>DirectLabourPriceQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="月度信息\DirectLabourPriceUpdate.resx">
+      <DependentUpon>DirectLabourPriceUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算EMS SMT\EMSSMTCostDay.resx">
+      <DependentUpon>EMSSMTCostDay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算EMS SMT\EMSSMTCostDayChart.resx">
+      <DependentUpon>EMSSMTCostDayChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算EMS SMT\EMSSMTCostDeptDay.resx">
+      <DependentUpon>EMSSMTCostDeptDay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算EMS SMT\EMSSMTCostDeptDayChart.resx">
+      <DependentUpon>EMSSMTCostDeptDayChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算EMS SMT\EMSSMTCostDeptMonth.resx">
+      <DependentUpon>EMSSMTCostDeptMonth.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算EMS SMT\EMSSMTCosting.resx">
+      <DependentUpon>EMSSMTCosting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成本计算EMS SMT\EMSSMTCostMonth.resx">
+      <DependentUpon>EMSSMTCostMonth.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SMTCost_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

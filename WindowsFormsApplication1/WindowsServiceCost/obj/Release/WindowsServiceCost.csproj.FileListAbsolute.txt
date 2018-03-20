@@ -1,0 +1,9 @@
+E:\成本计算\WindowsFormsApplication1\WindowsServiceCost\obj\Release\WindowsServiceCost.ProjectInstaller.resources
+E:\成本计算\WindowsFormsApplication1\WindowsServiceCost\obj\Release\WindowsServiceCost.csproj.GenerateResource.Cache
+E:\成本计算\WindowsFormsApplication1\WindowsServiceCost\bin\Release\WindowsServiceCost.exe
+E:\成本计算\WindowsFormsApplication1\WindowsServiceCost\bin\Release\WindowsServiceCost.pdb
+E:\成本计算\WindowsFormsApplication1\WindowsServiceCost\obj\Release\WindowsServiceCost.exe
+E:\成本计算\WindowsFormsApplication1\WindowsServiceCost\obj\Release\WindowsServiceCost.pdb
+E:\成本计算\WindowsFormsApplication1\WindowsServiceCost\obj\Release\WindowsServiceCost.CostService.resources
+E:\成本计算\WindowsFormsApplication1\WindowsServiceCost\bin\Release\WindowsServiceCost.exe.config
+E:\成本计算\WindowsFormsApplication1\WindowsServiceCost\obj\Release\WindowsServiceCost.csprojResolveAssemblyReference.cache

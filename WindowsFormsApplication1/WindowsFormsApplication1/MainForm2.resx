@@ -1,0 +1,946 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="barManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="barAndDockingController1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>148, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>118</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="accordionControlElement成本运算.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAH3RFWHRUaXRsZQBDYWxjdWxh
+        dGlvbjtDYWxjdWxhdGlvbnM79EO8PAAAAnFJREFUOE+dk91Lk2EYxh+wDuqg+gc66KAI+zK/+loJJUmY
+        qOTOxIiZc8uk5kw3NWuNdDmNDPqwdEEdZAmVpX1opWGkszooiYjApJCQNqfu28XV/dzvlEV10sGP+37u
+        +7qu54X3fYUQIo5YQCz8D+JEY6uzr8nxBk2O10yjpE0yDHurQsNVJ3PmihO2liHUtwyi/vIgrBcG+kXN
+        2T4Ewz8VZiMIhCXyHGECIaWXNRCKwB9F9pUNzyDM9udsVoyKmYVUvYFZXGy7Bd1RC5LT8lBUWjsf4A9G
+        UGF7CiFTYpPlgm+haracQ0qaGl++TaCYQmSQj+YSL2Gs64E4ZutlsY9MvuDsvGDo7Qds3JaLAq2J594A
+        7emJvNwrlFmfQBhP9/yWKhcJW3OQsCWXyMYGYv2mbDbMSPxRqD9ieQRhsD5WFnTDnOiHx4fkHfuwLjUL
+        n0fHMU2mP/CFUXriIYRM4VQKmRO9Gh7BmtRM7FUX4+t3NzLzNFgRvx1tN+7AWGVDZq4GUxRwuLYbQqZM
+        +8PMlIQWlxwdiE/ag+pTzfDQWaLaqYZqVx5GPo2xxuMNQ1/TBVFyvIsHDA2l+JDBgtWJGeh9McxCicFU
+        h7UpGdxPRtFV3YfQVz9gU35hOfI15RgbdyFJlUOv7CQmZ8g8E+Kqzi/B8pWb8e7jKJ3lLAStuRNCpkjB
+        fm0lViWk44DODPv5a5hw+1jU2OzA7qwCdPe+RHxiOjPgfA/3dAhFpnsQWlMnC91MmHFxjc5I6IpBGl20
+        k7PCirsQmrLr/cWmDijcjoE+YdMc7dRHMbdDz9zEQaOjn/5gsYhYQiz9B8to/jekfvEvy9TKOhjUD1kA
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="accordionControlElement单日成本.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAH3RFWHRUaXRsZQBHcmlkO0hl
+        YWRlcjtDb2x1bW5IZWFkZXI7l8XK+gAAAm5JREFUOE+lk91PkmEYxp/soLbqn2gdt1Uqms22WlvTg7Y2
+        py5pbbYU+1gfTgFR8TORQqFCXY5WWFkHHQgJ4ztUVIhS3Op/QEEdBIRuV/fzAqKbrYMOfruf93qu+3q+
+        9jLG2AGi4B8cpPn9KGA+9TnXvLoMvsEyzKnOYnagFDP9RF8JvD0l8HSL4FEWw91ZBFd7EZyKQjjazsAu
+        Pw1r6yk38/aWIr4yjNiKBrHlp4QaIUMd4j8N2Az2YfNrLzYD3QjorpJPj40FBdZ9ckKGyWsnwL50iRAL
+        DSHqakTUeQsRx03M9ZdjY74Ta7YbWLVex5pFDKdchOiMHGFzLcKmGqzPtuBd7XEwd0cxYktqRLLNEXs9
+        ZnvKsOHrwBpvtoqxOl0Hp7QIUa+UAmoQnqqm8SNMVFMAP9cPoxgrYxUIjVZgWX8ZdmkhQmNV+K69hODQ
+        RQQ1F2C+cxJB3RX4VeexOFAOv6YSxioKUGq9SKW3kUhtIZEkqI5/WELqd177RfrLyW9IksbHHD6WP3GD
+        KTQewcxFHsDr2Pu9Zq6Nvg3uCUhQT6vKASYbdO4E5NJHJvLmeGILHL0xIATEKYx/J5LbaO6zgbU8tu9M
+        5AKev/GDr5Axp4X67DVpdLxMYFrY7YMeK9jDXhuSKTJnV+JV92qRzFyj5myD1pDTMiF8sXtKC9j9LkvW
+        nE8fNiwIWkwIyKAZ92V3kBZ0HnC7/TPY3c5pwZx7BT4xQhcmvMKui31Bx8q9QjzJj5WGpM0E1iD95GpS
+        mCFRmNBEAhcbs0jkNN6NbAoNMhPB6xTqmz+66Sdjh4gjxNG/cIz0/eD+wwzAf/EHt7/PgpL6QysAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="accordionControlElement月成本.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAH3RFWHRUaXRsZQBHcmlkO0hl
+        YWRlcjtDb2x1bW5IZWFkZXI7l8XK+gAAAm5JREFUOE+lk91PkmEYxp/soLbqn2gdt1Uqms22WlvTg7Y2
+        py5pbbYU+1gfTgFR8TORQqFCXY5WWFkHHQgJ4ztUVIhS3Op/QEEdBIRuV/fzAqKbrYMOfruf93qu+3q+
+        9jLG2AGi4B8cpPn9KGA+9TnXvLoMvsEyzKnOYnagFDP9RF8JvD0l8HSL4FEWw91ZBFd7EZyKQjjazsAu
+        Pw1r6yk38/aWIr4yjNiKBrHlp4QaIUMd4j8N2Az2YfNrLzYD3QjorpJPj40FBdZ9ckKGyWsnwL50iRAL
+        DSHqakTUeQsRx03M9ZdjY74Ta7YbWLVex5pFDKdchOiMHGFzLcKmGqzPtuBd7XEwd0cxYktqRLLNEXs9
+        ZnvKsOHrwBpvtoqxOl0Hp7QIUa+UAmoQnqqm8SNMVFMAP9cPoxgrYxUIjVZgWX8ZdmkhQmNV+K69hODQ
+        RQQ1F2C+cxJB3RX4VeexOFAOv6YSxioKUGq9SKW3kUhtIZEkqI5/WELqd177RfrLyW9IksbHHD6WP3GD
+        KTQewcxFHsDr2Pu9Zq6Nvg3uCUhQT6vKASYbdO4E5NJHJvLmeGILHL0xIATEKYx/J5LbaO6zgbU8tu9M
+        5AKev/GDr5Axp4X67DVpdLxMYFrY7YMeK9jDXhuSKTJnV+JV92qRzFyj5myD1pDTMiF8sXtKC9j9LkvW
+        nE8fNiwIWkwIyKAZ92V3kBZ0HnC7/TPY3c5pwZx7BT4xQhcmvMKui31Bx8q9QjzJj5WGpM0E1iD95GpS
+        mCFRmNBEAhcbs0jkNN6NbAoNMhPB6xTqmz+66Sdjh4gjxNG/cIz0/eD+wwzAf/EHt7/PgpL6QysAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="accordionControlElement部门日成本.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAH3RFWHRUaXRsZQBHcmlkO0hl
+        YWRlcjtDb2x1bW5IZWFkZXI7l8XK+gAAAm5JREFUOE+lk91PkmEYxp/soLbqn2gdt1Uqms22WlvTg7Y2
+        py5pbbYU+1gfTgFR8TORQqFCXY5WWFkHHQgJ4ztUVIhS3Op/QEEdBIRuV/fzAqKbrYMOfruf93qu+3q+
+        9jLG2AGi4B8cpPn9KGA+9TnXvLoMvsEyzKnOYnagFDP9RF8JvD0l8HSL4FEWw91ZBFd7EZyKQjjazsAu
+        Pw1r6yk38/aWIr4yjNiKBrHlp4QaIUMd4j8N2Az2YfNrLzYD3QjorpJPj40FBdZ9ckKGyWsnwL50iRAL
+        DSHqakTUeQsRx03M9ZdjY74Ta7YbWLVex5pFDKdchOiMHGFzLcKmGqzPtuBd7XEwd0cxYktqRLLNEXs9
+        ZnvKsOHrwBpvtoqxOl0Hp7QIUa+UAmoQnqqm8SNMVFMAP9cPoxgrYxUIjVZgWX8ZdmkhQmNV+K69hODQ
+        RQQ1F2C+cxJB3RX4VeexOFAOv6YSxioKUGq9SKW3kUhtIZEkqI5/WELqd177RfrLyW9IksbHHD6WP3GD
+        KTQewcxFHsDr2Pu9Zq6Nvg3uCUhQT6vKASYbdO4E5NJHJvLmeGILHL0xIATEKYx/J5LbaO6zgbU8tu9M
+        5AKev/GDr5Axp4X67DVpdLxMYFrY7YMeK9jDXhuSKTJnV+JV92qRzFyj5myD1pDTMiF8sXtKC9j9LkvW
+        nE8fNiwIWkwIyKAZ92V3kBZ0HnC7/TPY3c5pwZx7BT4xQhcmvMKui31Bx8q9QjzJj5WGpM0E1iD95GpS
+        mCFRmNBEAhcbs0jkNN6NbAoNMhPB6xTqmz+66Sdjh4gjxNG/cIz0/eD+wwzAf/EHt7/PgpL6QysAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="accordionControlElement部门月成本.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAH3RFWHRUaXRsZQBHcmlkO0hl
+        YWRlcjtDb2x1bW5IZWFkZXI7l8XK+gAAAm5JREFUOE+lk91PkmEYxp/soLbqn2gdt1Uqms22WlvTg7Y2
+        py5pbbYU+1gfTgFR8TORQqFCXY5WWFkHHQgJ4ztUVIhS3Op/QEEdBIRuV/fzAqKbrYMOfruf93qu+3q+
+        9jLG2AGi4B8cpPn9KGA+9TnXvLoMvsEyzKnOYnagFDP9RF8JvD0l8HSL4FEWw91ZBFd7EZyKQjjazsAu
+        Pw1r6yk38/aWIr4yjNiKBrHlp4QaIUMd4j8N2Az2YfNrLzYD3QjorpJPj40FBdZ9ckKGyWsnwL50iRAL
+        DSHqakTUeQsRx03M9ZdjY74Ta7YbWLVex5pFDKdchOiMHGFzLcKmGqzPtuBd7XEwd0cxYktqRLLNEXs9
+        ZnvKsOHrwBpvtoqxOl0Hp7QIUa+UAmoQnqqm8SNMVFMAP9cPoxgrYxUIjVZgWX8ZdmkhQmNV+K69hODQ
+        RQQ1F2C+cxJB3RX4VeexOFAOv6YSxioKUGq9SKW3kUhtIZEkqI5/WELqd177RfrLyW9IksbHHD6WP3GD
+        KTQewcxFHsDr2Pu9Zq6Nvg3uCUhQT6vKASYbdO4E5NJHJvLmeGILHL0xIATEKYx/J5LbaO6zgbU8tu9M
+        5AKev/GDr5Axp4X67DVpdLxMYFrY7YMeK9jDXhuSKTJnV+JV92qRzFyj5myD1pDTMiF8sXtKC9j9LkvW
+        nE8fNiwIWkwIyKAZ92V3kBZ0HnC7/TPY3c5pwZx7BT4xQhcmvMKui31Bx8q9QjzJj5WGpM0E1iD95GpS
+        mCFRmNBEAhcbs0jkNN6NbAoNMhPB6xTqmz+66Sdjh4gjxNG/cIz0/eD+wwzAf/EHt7/PgpL6QysAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="accordionControlElement日成本报表.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAADXRFWHRUaXRsZQBDb2x1bW47
+        UaPC6wAAAp9JREFUOE+Vkn9MzHEYx6/0g5pI8gd/MBphMkV2qOgcKnW3ikVTuaS0tX4pJa5VV2s5NdRa
+        y4+IdJdqWuvHnLu+pc7J9eOuMP7pD3+YDGtDpL3d87ljx0bz2T579v5+n/fr83ye58Pj/XvZmH7bmvY8
+        SyT9+wLA+9smk7TJoJE2j+OcwtBDIOtcRpoDYJfXNIb+17PIVRphSrf7X4B9TqMBLS++I/vuKAHsfwL0
+        x0Xmq8xRgX1G/TAU4zNIuzVEAEeqgkCWaMPjsv1/QUwfqUnUMEqg6JBSp0f9yFckX3tKACdjfBj3PEEM
+        oySMY3laWbg1wK64YS9XqhBCdkdACU6JtU9Qq59GQo2OAAufSUSYVTVjPC7UXJG2SGwNcJA1BOLVu1YU
+        3t7NDJIqLa5ovyCucoD0orHYEMzUyTF2LJj0fGqD9Z0c82/6QTshx/kbuyjBJfpSHy5ynxBV0Ut6sfHo
+        PkxXF2A0Skh6AW+oXMQZKsTQXwilkp1zr/pC/TIfZ2q2shMj5RyKVVOIKNOQdh2O2IPP8iwMiQPMgJGy
+        EGCiBYMl+5kho2oz2o3pSL3sxQyiUhXyOj4itOQB6SX6gzsxlZ+EwSA+aypPJxMAw8Xol/qzEpPLPaHQ
+        SZAkX8cMQYXdOH3/PQ4UdpF20wl98CEzGo8F3qSdeX1n+ZgdyII6k5XsKilZhevcIcQWrWQGgbQDKfcm
+        EWiKJr20P8ALk4liPPLbZAao0rbgm+YkOk9tZCdGF6xAZXcwjkiXM4B/XjsSG9/CL6edtHvvjg14EyNE
+        D3+9GdAa7/mw7cRaKGM81DS2yBx39eHcZQjPciPtsj1dqeFnt8E3VamhHnX5rNFotnmg03s1aTZGB9ZN
+        c6TXR8/VyRJpxH9qMjlbzLY/AKUctMpzUngXAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="accordionControlElement日成本单点报表.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAADXRFWHRUaXRsZQBDb2x1bW47
+        UaPC6wAAAp9JREFUOE+Vkn9MzHEYx6/0g5pI8gd/MBphMkV2qOgcKnW3ikVTuaS0tX4pJa5VV2s5NdRa
+        y4+IdJdqWuvHnLu+pc7J9eOuMP7pD3+YDGtDpL3d87ljx0bz2T579v5+n/fr83ye58Pj/XvZmH7bmvY8
+        SyT9+wLA+9smk7TJoJE2j+OcwtBDIOtcRpoDYJfXNIb+17PIVRphSrf7X4B9TqMBLS++I/vuKAHsfwL0
+        x0Xmq8xRgX1G/TAU4zNIuzVEAEeqgkCWaMPjsv1/QUwfqUnUMEqg6JBSp0f9yFckX3tKACdjfBj3PEEM
+        oySMY3laWbg1wK64YS9XqhBCdkdACU6JtU9Qq59GQo2OAAufSUSYVTVjPC7UXJG2SGwNcJA1BOLVu1YU
+        3t7NDJIqLa5ovyCucoD0orHYEMzUyTF2LJj0fGqD9Z0c82/6QTshx/kbuyjBJfpSHy5ynxBV0Ut6sfHo
+        PkxXF2A0Skh6AW+oXMQZKsTQXwilkp1zr/pC/TIfZ2q2shMj5RyKVVOIKNOQdh2O2IPP8iwMiQPMgJGy
+        EGCiBYMl+5kho2oz2o3pSL3sxQyiUhXyOj4itOQB6SX6gzsxlZ+EwSA+aypPJxMAw8Xol/qzEpPLPaHQ
+        SZAkX8cMQYXdOH3/PQ4UdpF20wl98CEzGo8F3qSdeX1n+ZgdyII6k5XsKilZhevcIcQWrWQGgbQDKfcm
+        EWiKJr20P8ALk4liPPLbZAao0rbgm+YkOk9tZCdGF6xAZXcwjkiXM4B/XjsSG9/CL6edtHvvjg14EyNE
+        D3+9GdAa7/mw7cRaKGM81DS2yBx39eHcZQjPciPtsj1dqeFnt8E3VamhHnX5rNFotnmg03s1aTZGB9ZN
+        c6TXR8/VyRJpxH9qMjlbzLY/AKUctMpzUngXAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="accordionControlElement部门日成本报表.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAADXRFWHRUaXRsZQBDb2x1bW47
+        UaPC6wAAAp9JREFUOE+Vkn9MzHEYx6/0g5pI8gd/MBphMkV2qOgcKnW3ikVTuaS0tX4pJa5VV2s5NdRa
+        y4+IdJdqWuvHnLu+pc7J9eOuMP7pD3+YDGtDpL3d87ljx0bz2T579v5+n/fr83ye58Pj/XvZmH7bmvY8
+        SyT9+wLA+9smk7TJoJE2j+OcwtBDIOtcRpoDYJfXNIb+17PIVRphSrf7X4B9TqMBLS++I/vuKAHsfwL0
+        x0Xmq8xRgX1G/TAU4zNIuzVEAEeqgkCWaMPjsv1/QUwfqUnUMEqg6JBSp0f9yFckX3tKACdjfBj3PEEM
+        oySMY3laWbg1wK64YS9XqhBCdkdACU6JtU9Qq59GQo2OAAufSUSYVTVjPC7UXJG2SGwNcJA1BOLVu1YU
+        3t7NDJIqLa5ovyCucoD0orHYEMzUyTF2LJj0fGqD9Z0c82/6QTshx/kbuyjBJfpSHy5ynxBV0Ut6sfHo
+        PkxXF2A0Skh6AW+oXMQZKsTQXwilkp1zr/pC/TIfZ2q2shMj5RyKVVOIKNOQdh2O2IPP8iwMiQPMgJGy
+        EGCiBYMl+5kho2oz2o3pSL3sxQyiUhXyOj4itOQB6SX6gzsxlZ+EwSA+aypPJxMAw8Xol/qzEpPLPaHQ
+        SZAkX8cMQYXdOH3/PQ4UdpF20wl98CEzGo8F3qSdeX1n+ZgdyII6k5XsKilZhevcIcQWrWQGgbQDKfcm
+        EWiKJr20P8ALk4liPPLbZAao0rbgm+YkOk9tZCdGF6xAZXcwjkiXM4B/XjsSG9/CL6edtHvvjg14EyNE
+        D3+9GdAa7/mw7cRaKGM81DS2yBx39eHcZQjPciPtsj1dqeFnt8E3VamhHnX5rNFotnmg03s1aTZGB9ZN
+        c6TXR8/VyRJpxH9qMjlbzLY/AKUctMpzUngXAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="accordionControlElement部门日成本单点报表.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAADXRFWHRUaXRsZQBDb2x1bW47
+        UaPC6wAAAp9JREFUOE+Vkn9MzHEYx6/0g5pI8gd/MBphMkV2qOgcKnW3ikVTuaS0tX4pJa5VV2s5NdRa
+        y4+IdJdqWuvHnLu+pc7J9eOuMP7pD3+YDGtDpL3d87ljx0bz2T579v5+n/fr83ye58Pj/XvZmH7bmvY8
+        SyT9+wLA+9smk7TJoJE2j+OcwtBDIOtcRpoDYJfXNIb+17PIVRphSrf7X4B9TqMBLS++I/vuKAHsfwL0
+        x0Xmq8xRgX1G/TAU4zNIuzVEAEeqgkCWaMPjsv1/QUwfqUnUMEqg6JBSp0f9yFckX3tKACdjfBj3PEEM
+        oySMY3laWbg1wK64YS9XqhBCdkdACU6JtU9Qq59GQo2OAAufSUSYVTVjPC7UXJG2SGwNcJA1BOLVu1YU
+        3t7NDJIqLa5ovyCucoD0orHYEMzUyTF2LJj0fGqD9Z0c82/6QTshx/kbuyjBJfpSHy5ynxBV0Ut6sfHo
+        PkxXF2A0Skh6AW+oXMQZKsTQXwilkp1zr/pC/TIfZ2q2shMj5RyKVVOIKNOQdh2O2IPP8iwMiQPMgJGy
+        EGCiBYMl+5kho2oz2o3pSL3sxQyiUhXyOj4itOQB6SX6gzsxlZ+EwSA+aypPJxMAw8Xol/qzEpPLPaHQ
+        SZAkX8cMQYXdOH3/PQ4UdpF20wl98CEzGo8F3qSdeX1n+ZgdyII6k5XsKilZhevcIcQWrWQGgbQDKfcm
+        EWiKJr20P8ALk4liPPLbZAao0rbgm+YkOk9tZCdGF6xAZXcwjkiXM4B/XjsSG9/CL6edtHvvjg14EyNE
+        D3+9GdAa7/mw7cRaKGM81DS2yBx39eHcZQjPciPtsj1dqeFnt8E3VamhHnX5rNFotnmg03s1aTZGB9ZN
+        c6TXR8/VyRJpxH9qMjlbzLY/AKUctMpzUngXAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="accordionControlElementEMSSMT成本运算.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAH3RFWHRUaXRsZQBDYWxjdWxh
+        dGlvbjtDYWxjdWxhdGlvbnM79EO8PAAAAnFJREFUOE+dk91Lk2EYxh+wDuqg+gc66KAI+zK/+loJJUmY
+        qOTOxIiZc8uk5kw3NWuNdDmNDPqwdEEdZAmVpX1opWGkszooiYjApJCQNqfu28XV/dzvlEV10sGP+37u
+        +7qu54X3fYUQIo5YQCz8D+JEY6uzr8nxBk2O10yjpE0yDHurQsNVJ3PmihO2liHUtwyi/vIgrBcG+kXN
+        2T4Ewz8VZiMIhCXyHGECIaWXNRCKwB9F9pUNzyDM9udsVoyKmYVUvYFZXGy7Bd1RC5LT8lBUWjsf4A9G
+        UGF7CiFTYpPlgm+haracQ0qaGl++TaCYQmSQj+YSL2Gs64E4ZutlsY9MvuDsvGDo7Qds3JaLAq2J594A
+        7emJvNwrlFmfQBhP9/yWKhcJW3OQsCWXyMYGYv2mbDbMSPxRqD9ieQRhsD5WFnTDnOiHx4fkHfuwLjUL
+        n0fHMU2mP/CFUXriIYRM4VQKmRO9Gh7BmtRM7FUX4+t3NzLzNFgRvx1tN+7AWGVDZq4GUxRwuLYbQqZM
+        +8PMlIQWlxwdiE/ag+pTzfDQWaLaqYZqVx5GPo2xxuMNQ1/TBVFyvIsHDA2l+JDBgtWJGeh9McxCicFU
+        h7UpGdxPRtFV3YfQVz9gU35hOfI15RgbdyFJlUOv7CQmZ8g8E+Kqzi/B8pWb8e7jKJ3lLAStuRNCpkjB
+        fm0lViWk44DODPv5a5hw+1jU2OzA7qwCdPe+RHxiOjPgfA/3dAhFpnsQWlMnC91MmHFxjc5I6IpBGl20
+        k7PCirsQmrLr/cWmDijcjoE+YdMc7dRHMbdDz9zEQaOjn/5gsYhYQiz9B8to/jekfvEvy9TKOhjUD1kA
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="accordionControlElementEMSSMT日成本.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAH3RFWHRUaXRsZQBHcmlkO0hl
+        YWRlcjtDb2x1bW5IZWFkZXI7l8XK+gAAAm5JREFUOE+lk91PkmEYxp/soLbqn2gdt1Uqms22WlvTg7Y2
+        py5pbbYU+1gfTgFR8TORQqFCXY5WWFkHHQgJ4ztUVIhS3Op/QEEdBIRuV/fzAqKbrYMOfruf93qu+3q+
+        9jLG2AGi4B8cpPn9KGA+9TnXvLoMvsEyzKnOYnagFDP9RF8JvD0l8HSL4FEWw91ZBFd7EZyKQjjazsAu
+        Pw1r6yk38/aWIr4yjNiKBrHlp4QaIUMd4j8N2Az2YfNrLzYD3QjorpJPj40FBdZ9ckKGyWsnwL50iRAL
+        DSHqakTUeQsRx03M9ZdjY74Ta7YbWLVex5pFDKdchOiMHGFzLcKmGqzPtuBd7XEwd0cxYktqRLLNEXs9
+        ZnvKsOHrwBpvtoqxOl0Hp7QIUa+UAmoQnqqm8SNMVFMAP9cPoxgrYxUIjVZgWX8ZdmkhQmNV+K69hODQ
+        RQQ1F2C+cxJB3RX4VeexOFAOv6YSxioKUGq9SKW3kUhtIZEkqI5/WELqd177RfrLyW9IksbHHD6WP3GD
+        KTQewcxFHsDr2Pu9Zq6Nvg3uCUhQT6vKASYbdO4E5NJHJvLmeGILHL0xIATEKYx/J5LbaO6zgbU8tu9M
+        5AKev/GDr5Axp4X67DVpdLxMYFrY7YMeK9jDXhuSKTJnV+JV92qRzFyj5myD1pDTMiF8sXtKC9j9LkvW
+        nE8fNiwIWkwIyKAZ92V3kBZ0HnC7/TPY3c5pwZx7BT4xQhcmvMKui31Bx8q9QjzJj5WGpM0E1iD95GpS
+        mCFRmNBEAhcbs0jkNN6NbAoNMhPB6xTqmz+66Sdjh4gjxNG/cIz0/eD+wwzAf/EHt7/PgpL6QysAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="accordionControlElementEMSSMT月成本.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAH3RFWHRUaXRsZQBHcmlkO0hl
+        YWRlcjtDb2x1bW5IZWFkZXI7l8XK+gAAAm5JREFUOE+lk91PkmEYxp/soLbqn2gdt1Uqms22WlvTg7Y2
+        py5pbbYU+1gfTgFR8TORQqFCXY5WWFkHHQgJ4ztUVIhS3Op/QEEdBIRuV/fzAqKbrYMOfruf93qu+3q+
+        9jLG2AGi4B8cpPn9KGA+9TnXvLoMvsEyzKnOYnagFDP9RF8JvD0l8HSL4FEWw91ZBFd7EZyKQjjazsAu
+        Pw1r6yk38/aWIr4yjNiKBrHlp4QaIUMd4j8N2Az2YfNrLzYD3QjorpJPj40FBdZ9ckKGyWsnwL50iRAL
+        DSHqakTUeQsRx03M9ZdjY74Ta7YbWLVex5pFDKdchOiMHGFzLcKmGqzPtuBd7XEwd0cxYktqRLLNEXs9
+        ZnvKsOHrwBpvtoqxOl0Hp7QIUa+UAmoQnqqm8SNMVFMAP9cPoxgrYxUIjVZgWX8ZdmkhQmNV+K69hODQ
+        RQQ1F2C+cxJB3RX4VeexOFAOv6YSxioKUGq9SKW3kUhtIZEkqI5/WELqd177RfrLyW9IksbHHD6WP3GD
+        KTQewcxFHsDr2Pu9Zq6Nvg3uCUhQT6vKASYbdO4E5NJHJvLmeGILHL0xIATEKYx/J5LbaO6zgbU8tu9M
+        5AKev/GDr5Axp4X67DVpdLxMYFrY7YMeK9jDXhuSKTJnV+JV92qRzFyj5myD1pDTMiF8sXtKC9j9LkvW
+        nE8fNiwIWkwIyKAZ92V3kBZ0HnC7/TPY3c5pwZx7BT4xQhcmvMKui31Bx8q9QjzJj5WGpM0E1iD95GpS
+        mCFRmNBEAhcbs0jkNN6NbAoNMhPB6xTqmz+66Sdjh4gjxNG/cIz0/eD+wwzAf/EHt7/PgpL6QysAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="accordionControlElementEMSSMT部门日成本.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAH3RFWHRUaXRsZQBHcmlkO0hl
+        YWRlcjtDb2x1bW5IZWFkZXI7l8XK+gAAAm5JREFUOE+lk91PkmEYxp/soLbqn2gdt1Uqms22WlvTg7Y2
+        py5pbbYU+1gfTgFR8TORQqFCXY5WWFkHHQgJ4ztUVIhS3Op/QEEdBIRuV/fzAqKbrYMOfruf93qu+3q+
+        9jLG2AGi4B8cpPn9KGA+9TnXvLoMvsEyzKnOYnagFDP9RF8JvD0l8HSL4FEWw91ZBFd7EZyKQjjazsAu
+        Pw1r6yk38/aWIr4yjNiKBrHlp4QaIUMd4j8N2Az2YfNrLzYD3QjorpJPj40FBdZ9ckKGyWsnwL50iRAL
+        DSHqakTUeQsRx03M9ZdjY74Ta7YbWLVex5pFDKdchOiMHGFzLcKmGqzPtuBd7XEwd0cxYktqRLLNEXs9
+        ZnvKsOHrwBpvtoqxOl0Hp7QIUa+UAmoQnqqm8SNMVFMAP9cPoxgrYxUIjVZgWX8ZdmkhQmNV+K69hODQ
+        RQQ1F2C+cxJB3RX4VeexOFAOv6YSxioKUGq9SKW3kUhtIZEkqI5/WELqd177RfrLyW9IksbHHD6WP3GD
+        KTQewcxFHsDr2Pu9Zq6Nvg3uCUhQT6vKASYbdO4E5NJHJvLmeGILHL0xIATEKYx/J5LbaO6zgbU8tu9M
+        5AKev/GDr5Axp4X67DVpdLxMYFrY7YMeK9jDXhuSKTJnV+JV92qRzFyj5myD1pDTMiF8sXtKC9j9LkvW
+        nE8fNiwIWkwIyKAZ92V3kBZ0HnC7/TPY3c5pwZx7BT4xQhcmvMKui31Bx8q9QjzJj5WGpM0E1iD95GpS
+        mCFRmNBEAhcbs0jkNN6NbAoNMhPB6xTqmz+66Sdjh4gjxNG/cIz0/eD+wwzAf/EHt7/PgpL6QysAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="accordionControlElementEMSSMT部门月成本.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAH3RFWHRUaXRsZQBHcmlkO0hl
+        YWRlcjtDb2x1bW5IZWFkZXI7l8XK+gAAAm5JREFUOE+lk91PkmEYxp/soLbqn2gdt1Uqms22WlvTg7Y2
+        py5pbbYU+1gfTgFR8TORQqFCXY5WWFkHHQgJ4ztUVIhS3Op/QEEdBIRuV/fzAqKbrYMOfruf93qu+3q+
+        9jLG2AGi4B8cpPn9KGA+9TnXvLoMvsEyzKnOYnagFDP9RF8JvD0l8HSL4FEWw91ZBFd7EZyKQjjazsAu
+        Pw1r6yk38/aWIr4yjNiKBrHlp4QaIUMd4j8N2Az2YfNrLzYD3QjorpJPj40FBdZ9ckKGyWsnwL50iRAL
+        DSHqakTUeQsRx03M9ZdjY74Ta7YbWLVex5pFDKdchOiMHGFzLcKmGqzPtuBd7XEwd0cxYktqRLLNEXs9
+        ZnvKsOHrwBpvtoqxOl0Hp7QIUa+UAmoQnqqm8SNMVFMAP9cPoxgrYxUIjVZgWX8ZdmkhQmNV+K69hODQ
+        RQQ1F2C+cxJB3RX4VeexOFAOv6YSxioKUGq9SKW3kUhtIZEkqI5/WELqd177RfrLyW9IksbHHD6WP3GD
+        KTQewcxFHsDr2Pu9Zq6Nvg3uCUhQT6vKASYbdO4E5NJHJvLmeGILHL0xIATEKYx/J5LbaO6zgbU8tu9M
+        5AKev/GDr5Axp4X67DVpdLxMYFrY7YMeK9jDXhuSKTJnV+JV92qRzFyj5myD1pDTMiF8sXtKC9j9LkvW
+        nE8fNiwIWkwIyKAZ92V3kBZ0HnC7/TPY3c5pwZx7BT4xQhcmvMKui31Bx8q9QjzJj5WGpM0E1iD95GpS
+        mCFRmNBEAhcbs0jkNN6NbAoNMhPB6xTqmz+66Sdjh4gjxNG/cIz0/eD+wwzAf/EHt7/PgpL6QysAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="accordionControlElementEMSSMT日成本报表.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAADXRFWHRUaXRsZQBDb2x1bW47
+        UaPC6wAAAp9JREFUOE+Vkn9MzHEYx6/0g5pI8gd/MBphMkV2qOgcKnW3ikVTuaS0tX4pJa5VV2s5NdRa
+        y4+IdJdqWuvHnLu+pc7J9eOuMP7pD3+YDGtDpL3d87ljx0bz2T579v5+n/fr83ye58Pj/XvZmH7bmvY8
+        SyT9+wLA+9smk7TJoJE2j+OcwtBDIOtcRpoDYJfXNIb+17PIVRphSrf7X4B9TqMBLS++I/vuKAHsfwL0
+        x0Xmq8xRgX1G/TAU4zNIuzVEAEeqgkCWaMPjsv1/QUwfqUnUMEqg6JBSp0f9yFckX3tKACdjfBj3PEEM
+        oySMY3laWbg1wK64YS9XqhBCdkdACU6JtU9Qq59GQo2OAAufSUSYVTVjPC7UXJG2SGwNcJA1BOLVu1YU
+        3t7NDJIqLa5ovyCucoD0orHYEMzUyTF2LJj0fGqD9Z0c82/6QTshx/kbuyjBJfpSHy5ynxBV0Ut6sfHo
+        PkxXF2A0Skh6AW+oXMQZKsTQXwilkp1zr/pC/TIfZ2q2shMj5RyKVVOIKNOQdh2O2IPP8iwMiQPMgJGy
+        EGCiBYMl+5kho2oz2o3pSL3sxQyiUhXyOj4itOQB6SX6gzsxlZ+EwSA+aypPJxMAw8Xol/qzEpPLPaHQ
+        SZAkX8cMQYXdOH3/PQ4UdpF20wl98CEzGo8F3qSdeX1n+ZgdyII6k5XsKilZhevcIcQWrWQGgbQDKfcm
+        EWiKJr20P8ALk4liPPLbZAao0rbgm+YkOk9tZCdGF6xAZXcwjkiXM4B/XjsSG9/CL6edtHvvjg14EyNE
+        D3+9GdAa7/mw7cRaKGM81DS2yBx39eHcZQjPciPtsj1dqeFnt8E3VamhHnX5rNFotnmg03s1aTZGB9ZN
+        c6TXR8/VyRJpxH9qMjlbzLY/AKUctMpzUngXAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="accordionControlElementEMSSMT日成本单点报表.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAADXRFWHRUaXRsZQBDb2x1bW47
+        UaPC6wAAAp9JREFUOE+Vkn9MzHEYx6/0g5pI8gd/MBphMkV2qOgcKnW3ikVTuaS0tX4pJa5VV2s5NdRa
+        y4+IdJdqWuvHnLu+pc7J9eOuMP7pD3+YDGtDpL3d87ljx0bz2T579v5+n/fr83ye58Pj/XvZmH7bmvY8
+        SyT9+wLA+9smk7TJoJE2j+OcwtBDIOtcRpoDYJfXNIb+17PIVRphSrf7X4B9TqMBLS++I/vuKAHsfwL0
+        x0Xmq8xRgX1G/TAU4zNIuzVEAEeqgkCWaMPjsv1/QUwfqUnUMEqg6JBSp0f9yFckX3tKACdjfBj3PEEM
+        oySMY3laWbg1wK64YS9XqhBCdkdACU6JtU9Qq59GQo2OAAufSUSYVTVjPC7UXJG2SGwNcJA1BOLVu1YU
+        3t7NDJIqLa5ovyCucoD0orHYEMzUyTF2LJj0fGqD9Z0c82/6QTshx/kbuyjBJfpSHy5ynxBV0Ut6sfHo
+        PkxXF2A0Skh6AW+oXMQZKsTQXwilkp1zr/pC/TIfZ2q2shMj5RyKVVOIKNOQdh2O2IPP8iwMiQPMgJGy
+        EGCiBYMl+5kho2oz2o3pSL3sxQyiUhXyOj4itOQB6SX6gzsxlZ+EwSA+aypPJxMAw8Xol/qzEpPLPaHQ
+        SZAkX8cMQYXdOH3/PQ4UdpF20wl98CEzGo8F3qSdeX1n+ZgdyII6k5XsKilZhevcIcQWrWQGgbQDKfcm
+        EWiKJr20P8ALk4liPPLbZAao0rbgm+YkOk9tZCdGF6xAZXcwjkiXM4B/XjsSG9/CL6edtHvvjg14EyNE
+        D3+9GdAa7/mw7cRaKGM81DS2yBx39eHcZQjPciPtsj1dqeFnt8E3VamhHnX5rNFotnmg03s1aTZGB9ZN
+        c6TXR8/VyRJpxH9qMjlbzLY/AKUctMpzUngXAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="accordionControlElementEMSSMT部门日成本报表.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAADXRFWHRUaXRsZQBDb2x1bW47
+        UaPC6wAAAp9JREFUOE+Vkn9MzHEYx6/0g5pI8gd/MBphMkV2qOgcKnW3ikVTuaS0tX4pJa5VV2s5NdRa
+        y4+IdJdqWuvHnLu+pc7J9eOuMP7pD3+YDGtDpL3d87ljx0bz2T579v5+n/fr83ye58Pj/XvZmH7bmvY8
+        SyT9+wLA+9smk7TJoJE2j+OcwtBDIOtcRpoDYJfXNIb+17PIVRphSrf7X4B9TqMBLS++I/vuKAHsfwL0
+        x0Xmq8xRgX1G/TAU4zNIuzVEAEeqgkCWaMPjsv1/QUwfqUnUMEqg6JBSp0f9yFckX3tKACdjfBj3PEEM
+        oySMY3laWbg1wK64YS9XqhBCdkdACU6JtU9Qq59GQo2OAAufSUSYVTVjPC7UXJG2SGwNcJA1BOLVu1YU
+        3t7NDJIqLa5ovyCucoD0orHYEMzUyTF2LJj0fGqD9Z0c82/6QTshx/kbuyjBJfpSHy5ynxBV0Ut6sfHo
+        PkxXF2A0Skh6AW+oXMQZKsTQXwilkp1zr/pC/TIfZ2q2shMj5RyKVVOIKNOQdh2O2IPP8iwMiQPMgJGy
+        EGCiBYMl+5kho2oz2o3pSL3sxQyiUhXyOj4itOQB6SX6gzsxlZ+EwSA+aypPJxMAw8Xol/qzEpPLPaHQ
+        SZAkX8cMQYXdOH3/PQ4UdpF20wl98CEzGo8F3qSdeX1n+ZgdyII6k5XsKilZhevcIcQWrWQGgbQDKfcm
+        EWiKJr20P8ALk4liPPLbZAao0rbgm+YkOk9tZCdGF6xAZXcwjkiXM4B/XjsSG9/CL6edtHvvjg14EyNE
+        D3+9GdAa7/mw7cRaKGM81DS2yBx39eHcZQjPciPtsj1dqeFnt8E3VamhHnX5rNFotnmg03s1aTZGB9ZN
+        c6TXR8/VyRJpxH9qMjlbzLY/AKUctMpzUngXAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="accordionControlElementEMSSMT部门日成本单点报表.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAADXRFWHRUaXRsZQBDb2x1bW47
+        UaPC6wAAAp9JREFUOE+Vkn9MzHEYx6/0g5pI8gd/MBphMkV2qOgcKnW3ikVTuaS0tX4pJa5VV2s5NdRa
+        y4+IdJdqWuvHnLu+pc7J9eOuMP7pD3+YDGtDpL3d87ljx0bz2T579v5+n/fr83ye58Pj/XvZmH7bmvY8
+        SyT9+wLA+9smk7TJoJE2j+OcwtBDIOtcRpoDYJfXNIb+17PIVRphSrf7X4B9TqMBLS++I/vuKAHsfwL0
+        x0Xmq8xRgX1G/TAU4zNIuzVEAEeqgkCWaMPjsv1/QUwfqUnUMEqg6JBSp0f9yFckX3tKACdjfBj3PEEM
+        oySMY3laWbg1wK64YS9XqhBCdkdACU6JtU9Qq59GQo2OAAufSUSYVTVjPC7UXJG2SGwNcJA1BOLVu1YU
+        3t7NDJIqLa5ovyCucoD0orHYEMzUyTF2LJj0fGqD9Z0c82/6QTshx/kbuyjBJfpSHy5ynxBV0Ut6sfHo
+        PkxXF2A0Skh6AW+oXMQZKsTQXwilkp1zr/pC/TIfZ2q2shMj5RyKVVOIKNOQdh2O2IPP8iwMiQPMgJGy
+        EGCiBYMl+5kho2oz2o3pSL3sxQyiUhXyOj4itOQB6SX6gzsxlZ+EwSA+aypPJxMAw8Xol/qzEpPLPaHQ
+        SZAkX8cMQYXdOH3/PQ4UdpF20wl98CEzGo8F3qSdeX1n+ZgdyII6k5XsKilZhevcIcQWrWQGgbQDKfcm
+        EWiKJr20P8ALk4liPPLbZAao0rbgm+YkOk9tZCdGF6xAZXcwjkiXM4B/XjsSG9/CL6edtHvvjg14EyNE
+        D3+9GdAa7/mw7cRaKGM81DS2yBx39eHcZQjPciPtsj1dqeFnt8E3VamhHnX5rNFotnmg03s1aTZGB9ZN
+        c6TXR8/VyRJpxH9qMjlbzLY/AKUctMpzUngXAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="accordionControlElementSMTHH成本运算.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAH3RFWHRUaXRsZQBDYWxjdWxh
+        dGlvbjtDYWxjdWxhdGlvbnM79EO8PAAAAnFJREFUOE+dk91Lk2EYxh+wDuqg+gc66KAI+zK/+loJJUmY
+        qOTOxIiZc8uk5kw3NWuNdDmNDPqwdEEdZAmVpX1opWGkszooiYjApJCQNqfu28XV/dzvlEV10sGP+37u
+        +7qu54X3fYUQIo5YQCz8D+JEY6uzr8nxBk2O10yjpE0yDHurQsNVJ3PmihO2liHUtwyi/vIgrBcG+kXN
+        2T4Ewz8VZiMIhCXyHGECIaWXNRCKwB9F9pUNzyDM9udsVoyKmYVUvYFZXGy7Bd1RC5LT8lBUWjsf4A9G
+        UGF7CiFTYpPlgm+haracQ0qaGl++TaCYQmSQj+YSL2Gs64E4ZutlsY9MvuDsvGDo7Qds3JaLAq2J594A
+        7emJvNwrlFmfQBhP9/yWKhcJW3OQsCWXyMYGYv2mbDbMSPxRqD9ieQRhsD5WFnTDnOiHx4fkHfuwLjUL
+        n0fHMU2mP/CFUXriIYRM4VQKmRO9Gh7BmtRM7FUX4+t3NzLzNFgRvx1tN+7AWGVDZq4GUxRwuLYbQqZM
+        +8PMlIQWlxwdiE/ag+pTzfDQWaLaqYZqVx5GPo2xxuMNQ1/TBVFyvIsHDA2l+JDBgtWJGeh9McxCicFU
+        h7UpGdxPRtFV3YfQVz9gU35hOfI15RgbdyFJlUOv7CQmZ8g8E+Kqzi/B8pWb8e7jKJ3lLAStuRNCpkjB
+        fm0lViWk44DODPv5a5hw+1jU2OzA7qwCdPe+RHxiOjPgfA/3dAhFpnsQWlMnC91MmHFxjc5I6IpBGl20
+        k7PCirsQmrLr/cWmDijcjoE+YdMc7dRHMbdDz9zEQaOjn/5gsYhYQiz9B8to/jekfvEvy9TKOhjUD1kA
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="accordionControlElementSMTHH日成本.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAH3RFWHRUaXRsZQBHcmlkO0hl
+        YWRlcjtDb2x1bW5IZWFkZXI7l8XK+gAAAm5JREFUOE+lk91PkmEYxp/soLbqn2gdt1Uqms22WlvTg7Y2
+        py5pbbYU+1gfTgFR8TORQqFCXY5WWFkHHQgJ4ztUVIhS3Op/QEEdBIRuV/fzAqKbrYMOfruf93qu+3q+
+        9jLG2AGi4B8cpPn9KGA+9TnXvLoMvsEyzKnOYnagFDP9RF8JvD0l8HSL4FEWw91ZBFd7EZyKQjjazsAu
+        Pw1r6yk38/aWIr4yjNiKBrHlp4QaIUMd4j8N2Az2YfNrLzYD3QjorpJPj40FBdZ9ckKGyWsnwL50iRAL
+        DSHqakTUeQsRx03M9ZdjY74Ta7YbWLVex5pFDKdchOiMHGFzLcKmGqzPtuBd7XEwd0cxYktqRLLNEXs9
+        ZnvKsOHrwBpvtoqxOl0Hp7QIUa+UAmoQnqqm8SNMVFMAP9cPoxgrYxUIjVZgWX8ZdmkhQmNV+K69hODQ
+        RQQ1F2C+cxJB3RX4VeexOFAOv6YSxioKUGq9SKW3kUhtIZEkqI5/WELqd177RfrLyW9IksbHHD6WP3GD
+        KTQewcxFHsDr2Pu9Zq6Nvg3uCUhQT6vKASYbdO4E5NJHJvLmeGILHL0xIATEKYx/J5LbaO6zgbU8tu9M
+        5AKev/GDr5Axp4X67DVpdLxMYFrY7YMeK9jDXhuSKTJnV+JV92qRzFyj5myD1pDTMiF8sXtKC9j9LkvW
+        nE8fNiwIWkwIyKAZ92V3kBZ0HnC7/TPY3c5pwZx7BT4xQhcmvMKui31Bx8q9QjzJj5WGpM0E1iD95GpS
+        mCFRmNBEAhcbs0jkNN6NbAoNMhPB6xTqmz+66Sdjh4gjxNG/cIz0/eD+wwzAf/EHt7/PgpL6QysAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="accordionControlElementSMTHH月成本.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAH3RFWHRUaXRsZQBHcmlkO0hl
+        YWRlcjtDb2x1bW5IZWFkZXI7l8XK+gAAAm5JREFUOE+lk91PkmEYxp/soLbqn2gdt1Uqms22WlvTg7Y2
+        py5pbbYU+1gfTgFR8TORQqFCXY5WWFkHHQgJ4ztUVIhS3Op/QEEdBIRuV/fzAqKbrYMOfruf93qu+3q+
+        9jLG2AGi4B8cpPn9KGA+9TnXvLoMvsEyzKnOYnagFDP9RF8JvD0l8HSL4FEWw91ZBFd7EZyKQjjazsAu
+        Pw1r6yk38/aWIr4yjNiKBrHlp4QaIUMd4j8N2Az2YfNrLzYD3QjorpJPj40FBdZ9ckKGyWsnwL50iRAL
+        DSHqakTUeQsRx03M9ZdjY74Ta7YbWLVex5pFDKdchOiMHGFzLcKmGqzPtuBd7XEwd0cxYktqRLLNEXs9
+        ZnvKsOHrwBpvtoqxOl0Hp7QIUa+UAmoQnqqm8SNMVFMAP9cPoxgrYxUIjVZgWX8ZdmkhQmNV+K69hODQ
+        RQQ1F2C+cxJB3RX4VeexOFAOv6YSxioKUGq9SKW3kUhtIZEkqI5/WELqd177RfrLyW9IksbHHD6WP3GD
+        KTQewcxFHsDr2Pu9Zq6Nvg3uCUhQT6vKASYbdO4E5NJHJvLmeGILHL0xIATEKYx/J5LbaO6zgbU8tu9M
+        5AKev/GDr5Axp4X67DVpdLxMYFrY7YMeK9jDXhuSKTJnV+JV92qRzFyj5myD1pDTMiF8sXtKC9j9LkvW
+        nE8fNiwIWkwIyKAZ92V3kBZ0HnC7/TPY3c5pwZx7BT4xQhcmvMKui31Bx8q9QjzJj5WGpM0E1iD95GpS
+        mCFRmNBEAhcbs0jkNN6NbAoNMhPB6xTqmz+66Sdjh4gjxNG/cIz0/eD+wwzAf/EHt7/PgpL6QysAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="accordionControlElementSMTHH部门日成本.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAH3RFWHRUaXRsZQBHcmlkO0hl
+        YWRlcjtDb2x1bW5IZWFkZXI7l8XK+gAAAm5JREFUOE+lk91PkmEYxp/soLbqn2gdt1Uqms22WlvTg7Y2
+        py5pbbYU+1gfTgFR8TORQqFCXY5WWFkHHQgJ4ztUVIhS3Op/QEEdBIRuV/fzAqKbrYMOfruf93qu+3q+
+        9jLG2AGi4B8cpPn9KGA+9TnXvLoMvsEyzKnOYnagFDP9RF8JvD0l8HSL4FEWw91ZBFd7EZyKQjjazsAu
+        Pw1r6yk38/aWIr4yjNiKBrHlp4QaIUMd4j8N2Az2YfNrLzYD3QjorpJPj40FBdZ9ckKGyWsnwL50iRAL
+        DSHqakTUeQsRx03M9ZdjY74Ta7YbWLVex5pFDKdchOiMHGFzLcKmGqzPtuBd7XEwd0cxYktqRLLNEXs9
+        ZnvKsOHrwBpvtoqxOl0Hp7QIUa+UAmoQnqqm8SNMVFMAP9cPoxgrYxUIjVZgWX8ZdmkhQmNV+K69hODQ
+        RQQ1F2C+cxJB3RX4VeexOFAOv6YSxioKUGq9SKW3kUhtIZEkqI5/WELqd177RfrLyW9IksbHHD6WP3GD
+        KTQewcxFHsDr2Pu9Zq6Nvg3uCUhQT6vKASYbdO4E5NJHJvLmeGILHL0xIATEKYx/J5LbaO6zgbU8tu9M
+        5AKev/GDr5Axp4X67DVpdLxMYFrY7YMeK9jDXhuSKTJnV+JV92qRzFyj5myD1pDTMiF8sXtKC9j9LkvW
+        nE8fNiwIWkwIyKAZ92V3kBZ0HnC7/TPY3c5pwZx7BT4xQhcmvMKui31Bx8q9QjzJj5WGpM0E1iD95GpS
+        mCFRmNBEAhcbs0jkNN6NbAoNMhPB6xTqmz+66Sdjh4gjxNG/cIz0/eD+wwzAf/EHt7/PgpL6QysAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="accordionControlElementSMTHH部门月成本.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAH3RFWHRUaXRsZQBHcmlkO0hl
+        YWRlcjtDb2x1bW5IZWFkZXI7l8XK+gAAAm5JREFUOE+lk91PkmEYxp/soLbqn2gdt1Uqms22WlvTg7Y2
+        py5pbbYU+1gfTgFR8TORQqFCXY5WWFkHHQgJ4ztUVIhS3Op/QEEdBIRuV/fzAqKbrYMOfruf93qu+3q+
+        9jLG2AGi4B8cpPn9KGA+9TnXvLoMvsEyzKnOYnagFDP9RF8JvD0l8HSL4FEWw91ZBFd7EZyKQjjazsAu
+        Pw1r6yk38/aWIr4yjNiKBrHlp4QaIUMd4j8N2Az2YfNrLzYD3QjorpJPj40FBdZ9ckKGyWsnwL50iRAL
+        DSHqakTUeQsRx03M9ZdjY74Ta7YbWLVex5pFDKdchOiMHGFzLcKmGqzPtuBd7XEwd0cxYktqRLLNEXs9
+        ZnvKsOHrwBpvtoqxOl0Hp7QIUa+UAmoQnqqm8SNMVFMAP9cPoxgrYxUIjVZgWX8ZdmkhQmNV+K69hODQ
+        RQQ1F2C+cxJB3RX4VeexOFAOv6YSxioKUGq9SKW3kUhtIZEkqI5/WELqd177RfrLyW9IksbHHD6WP3GD
+        KTQewcxFHsDr2Pu9Zq6Nvg3uCUhQT6vKASYbdO4E5NJHJvLmeGILHL0xIATEKYx/J5LbaO6zgbU8tu9M
+        5AKev/GDr5Axp4X67DVpdLxMYFrY7YMeK9jDXhuSKTJnV+JV92qRzFyj5myD1pDTMiF8sXtKC9j9LkvW
+        nE8fNiwIWkwIyKAZ92V3kBZ0HnC7/TPY3c5pwZx7BT4xQhcmvMKui31Bx8q9QjzJj5WGpM0E1iD95GpS
+        mCFRmNBEAhcbs0jkNN6NbAoNMhPB6xTqmz+66Sdjh4gjxNG/cIz0/eD+wwzAf/EHt7/PgpL6QysAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="accordionControlElementSMTHH日成本报表.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAADXRFWHRUaXRsZQBDb2x1bW47
+        UaPC6wAAAp9JREFUOE+Vkn9MzHEYx6/0g5pI8gd/MBphMkV2qOgcKnW3ikVTuaS0tX4pJa5VV2s5NdRa
+        y4+IdJdqWuvHnLu+pc7J9eOuMP7pD3+YDGtDpL3d87ljx0bz2T579v5+n/fr83ye58Pj/XvZmH7bmvY8
+        SyT9+wLA+9smk7TJoJE2j+OcwtBDIOtcRpoDYJfXNIb+17PIVRphSrf7X4B9TqMBLS++I/vuKAHsfwL0
+        x0Xmq8xRgX1G/TAU4zNIuzVEAEeqgkCWaMPjsv1/QUwfqUnUMEqg6JBSp0f9yFckX3tKACdjfBj3PEEM
+        oySMY3laWbg1wK64YS9XqhBCdkdACU6JtU9Qq59GQo2OAAufSUSYVTVjPC7UXJG2SGwNcJA1BOLVu1YU
+        3t7NDJIqLa5ovyCucoD0orHYEMzUyTF2LJj0fGqD9Z0c82/6QTshx/kbuyjBJfpSHy5ynxBV0Ut6sfHo
+        PkxXF2A0Skh6AW+oXMQZKsTQXwilkp1zr/pC/TIfZ2q2shMj5RyKVVOIKNOQdh2O2IPP8iwMiQPMgJGy
+        EGCiBYMl+5kho2oz2o3pSL3sxQyiUhXyOj4itOQB6SX6gzsxlZ+EwSA+aypPJxMAw8Xol/qzEpPLPaHQ
+        SZAkX8cMQYXdOH3/PQ4UdpF20wl98CEzGo8F3qSdeX1n+ZgdyII6k5XsKilZhevcIcQWrWQGgbQDKfcm
+        EWiKJr20P8ALk4liPPLbZAao0rbgm+YkOk9tZCdGF6xAZXcwjkiXM4B/XjsSG9/CL6edtHvvjg14EyNE
+        D3+9GdAa7/mw7cRaKGM81DS2yBx39eHcZQjPciPtsj1dqeFnt8E3VamhHnX5rNFotnmg03s1aTZGB9ZN
+        c6TXR8/VyRJpxH9qMjlbzLY/AKUctMpzUngXAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="accordionControlElementSMTHH日成本单小时报表.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAADXRFWHRUaXRsZQBDb2x1bW47
+        UaPC6wAAAp9JREFUOE+Vkn9MzHEYx6/0g5pI8gd/MBphMkV2qOgcKnW3ikVTuaS0tX4pJa5VV2s5NdRa
+        y4+IdJdqWuvHnLu+pc7J9eOuMP7pD3+YDGtDpL3d87ljx0bz2T579v5+n/fr83ye58Pj/XvZmH7bmvY8
+        SyT9+wLA+9smk7TJoJE2j+OcwtBDIOtcRpoDYJfXNIb+17PIVRphSrf7X4B9TqMBLS++I/vuKAHsfwL0
+        x0Xmq8xRgX1G/TAU4zNIuzVEAEeqgkCWaMPjsv1/QUwfqUnUMEqg6JBSp0f9yFckX3tKACdjfBj3PEEM
+        oySMY3laWbg1wK64YS9XqhBCdkdACU6JtU9Qq59GQo2OAAufSUSYVTVjPC7UXJG2SGwNcJA1BOLVu1YU
+        3t7NDJIqLa5ovyCucoD0orHYEMzUyTF2LJj0fGqD9Z0c82/6QTshx/kbuyjBJfpSHy5ynxBV0Ut6sfHo
+        PkxXF2A0Skh6AW+oXMQZKsTQXwilkp1zr/pC/TIfZ2q2shMj5RyKVVOIKNOQdh2O2IPP8iwMiQPMgJGy
+        EGCiBYMl+5kho2oz2o3pSL3sxQyiUhXyOj4itOQB6SX6gzsxlZ+EwSA+aypPJxMAw8Xol/qzEpPLPaHQ
+        SZAkX8cMQYXdOH3/PQ4UdpF20wl98CEzGo8F3qSdeX1n+ZgdyII6k5XsKilZhevcIcQWrWQGgbQDKfcm
+        EWiKJr20P8ALk4liPPLbZAao0rbgm+YkOk9tZCdGF6xAZXcwjkiXM4B/XjsSG9/CL6edtHvvjg14EyNE
+        D3+9GdAa7/mw7cRaKGM81DS2yBx39eHcZQjPciPtsj1dqeFnt8E3VamhHnX5rNFotnmg03s1aTZGB9ZN
+        c6TXR8/VyRJpxH9qMjlbzLY/AKUctMpzUngXAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="accordionControlElementSMTHH部门日成本报表.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAADXRFWHRUaXRsZQBDb2x1bW47
+        UaPC6wAAAp9JREFUOE+Vkn9MzHEYx6/0g5pI8gd/MBphMkV2qOgcKnW3ikVTuaS0tX4pJa5VV2s5NdRa
+        y4+IdJdqWuvHnLu+pc7J9eOuMP7pD3+YDGtDpL3d87ljx0bz2T579v5+n/fr83ye58Pj/XvZmH7bmvY8
+        SyT9+wLA+9smk7TJoJE2j+OcwtBDIOtcRpoDYJfXNIb+17PIVRphSrf7X4B9TqMBLS++I/vuKAHsfwL0
+        x0Xmq8xRgX1G/TAU4zNIuzVEAEeqgkCWaMPjsv1/QUwfqUnUMEqg6JBSp0f9yFckX3tKACdjfBj3PEEM
+        oySMY3laWbg1wK64YS9XqhBCdkdACU6JtU9Qq59GQo2OAAufSUSYVTVjPC7UXJG2SGwNcJA1BOLVu1YU
+        3t7NDJIqLa5ovyCucoD0orHYEMzUyTF2LJj0fGqD9Z0c82/6QTshx/kbuyjBJfpSHy5ynxBV0Ut6sfHo
+        PkxXF2A0Skh6AW+oXMQZKsTQXwilkp1zr/pC/TIfZ2q2shMj5RyKVVOIKNOQdh2O2IPP8iwMiQPMgJGy
+        EGCiBYMl+5kho2oz2o3pSL3sxQyiUhXyOj4itOQB6SX6gzsxlZ+EwSA+aypPJxMAw8Xol/qzEpPLPaHQ
+        SZAkX8cMQYXdOH3/PQ4UdpF20wl98CEzGo8F3qSdeX1n+ZgdyII6k5XsKilZhevcIcQWrWQGgbQDKfcm
+        EWiKJr20P8ALk4liPPLbZAao0rbgm+YkOk9tZCdGF6xAZXcwjkiXM4B/XjsSG9/CL6edtHvvjg14EyNE
+        D3+9GdAa7/mw7cRaKGM81DS2yBx39eHcZQjPciPtsj1dqeFnt8E3VamhHnX5rNFotnmg03s1aTZGB9ZN
+        c6TXR8/VyRJpxH9qMjlbzLY/AKUctMpzUngXAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="accordionControlElementSMTHH部门日成本单小时报表.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAADXRFWHRUaXRsZQBDb2x1bW47
+        UaPC6wAAAp9JREFUOE+Vkn9MzHEYx6/0g5pI8gd/MBphMkV2qOgcKnW3ikVTuaS0tX4pJa5VV2s5NdRa
+        y4+IdJdqWuvHnLu+pc7J9eOuMP7pD3+YDGtDpL3d87ljx0bz2T579v5+n/fr83ye58Pj/XvZmH7bmvY8
+        SyT9+wLA+9smk7TJoJE2j+OcwtBDIOtcRpoDYJfXNIb+17PIVRphSrf7X4B9TqMBLS++I/vuKAHsfwL0
+        x0Xmq8xRgX1G/TAU4zNIuzVEAEeqgkCWaMPjsv1/QUwfqUnUMEqg6JBSp0f9yFckX3tKACdjfBj3PEEM
+        oySMY3laWbg1wK64YS9XqhBCdkdACU6JtU9Qq59GQo2OAAufSUSYVTVjPC7UXJG2SGwNcJA1BOLVu1YU
+        3t7NDJIqLa5ovyCucoD0orHYEMzUyTF2LJj0fGqD9Z0c82/6QTshx/kbuyjBJfpSHy5ynxBV0Ut6sfHo
+        PkxXF2A0Skh6AW+oXMQZKsTQXwilkp1zr/pC/TIfZ2q2shMj5RyKVVOIKNOQdh2O2IPP8iwMiQPMgJGy
+        EGCiBYMl+5kho2oz2o3pSL3sxQyiUhXyOj4itOQB6SX6gzsxlZ+EwSA+aypPJxMAw8Xol/qzEpPLPaHQ
+        SZAkX8cMQYXdOH3/PQ4UdpF20wl98CEzGo8F3qSdeX1n+ZgdyII6k5XsKilZhevcIcQWrWQGgbQDKfcm
+        EWiKJr20P8ALk4liPPLbZAao0rbgm+YkOk9tZCdGF6xAZXcwjkiXM4B/XjsSG9/CL6edtHvvjg14EyNE
+        D3+9GdAa7/mw7cRaKGM81DS2yBx39eHcZQjPciPtsj1dqeFnt8E3VamhHnX5rNFotnmg03s1aTZGB9ZN
+        c6TXR8/VyRJpxH9qMjlbzLY/AKUctMpzUngXAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="accordionControlElement终端成本运算.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAH3RFWHRUaXRsZQBDYWxjdWxh
+        dGlvbjtDYWxjdWxhdGlvbnM79EO8PAAAAnFJREFUOE+dk91Lk2EYxh+wDuqg+gc66KAI+zK/+loJJUmY
+        qOTOxIiZc8uk5kw3NWuNdDmNDPqwdEEdZAmVpX1opWGkszooiYjApJCQNqfu28XV/dzvlEV10sGP+37u
+        +7qu54X3fYUQIo5YQCz8D+JEY6uzr8nxBk2O10yjpE0yDHurQsNVJ3PmihO2liHUtwyi/vIgrBcG+kXN
+        2T4Ewz8VZiMIhCXyHGECIaWXNRCKwB9F9pUNzyDM9udsVoyKmYVUvYFZXGy7Bd1RC5LT8lBUWjsf4A9G
+        UGF7CiFTYpPlgm+haracQ0qaGl++TaCYQmSQj+YSL2Gs64E4ZutlsY9MvuDsvGDo7Qds3JaLAq2J594A
+        7emJvNwrlFmfQBhP9/yWKhcJW3OQsCWXyMYGYv2mbDbMSPxRqD9ieQRhsD5WFnTDnOiHx4fkHfuwLjUL
+        n0fHMU2mP/CFUXriIYRM4VQKmRO9Gh7BmtRM7FUX4+t3NzLzNFgRvx1tN+7AWGVDZq4GUxRwuLYbQqZM
+        +8PMlIQWlxwdiE/ag+pTzfDQWaLaqYZqVx5GPo2xxuMNQ1/TBVFyvIsHDA2l+JDBgtWJGeh9McxCicFU
+        h7UpGdxPRtFV3YfQVz9gU35hOfI15RgbdyFJlUOv7CQmZ8g8E+Kqzi/B8pWb8e7jKJ3lLAStuRNCpkjB
+        fm0lViWk44DODPv5a5hw+1jU2OzA7qwCdPe+RHxiOjPgfA/3dAhFpnsQWlMnC91MmHFxjc5I6IpBGl20
+        k7PCirsQmrLr/cWmDijcjoE+YdMc7dRHMbdDz9zEQaOjn/5gsYhYQiz9B8to/jekfvEvy9TKOhjUD1kA
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="accordionControlElement终端日成本.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAH3RFWHRUaXRsZQBHcmlkO0hl
+        YWRlcjtDb2x1bW5IZWFkZXI7l8XK+gAAAm5JREFUOE+lk91PkmEYxp/soLbqn2gdt1Uqms22WlvTg7Y2
+        py5pbbYU+1gfTgFR8TORQqFCXY5WWFkHHQgJ4ztUVIhS3Op/QEEdBIRuV/fzAqKbrYMOfruf93qu+3q+
+        9jLG2AGi4B8cpPn9KGA+9TnXvLoMvsEyzKnOYnagFDP9RF8JvD0l8HSL4FEWw91ZBFd7EZyKQjjazsAu
+        Pw1r6yk38/aWIr4yjNiKBrHlp4QaIUMd4j8N2Az2YfNrLzYD3QjorpJPj40FBdZ9ckKGyWsnwL50iRAL
+        DSHqakTUeQsRx03M9ZdjY74Ta7YbWLVex5pFDKdchOiMHGFzLcKmGqzPtuBd7XEwd0cxYktqRLLNEXs9
+        ZnvKsOHrwBpvtoqxOl0Hp7QIUa+UAmoQnqqm8SNMVFMAP9cPoxgrYxUIjVZgWX8ZdmkhQmNV+K69hODQ
+        RQQ1F2C+cxJB3RX4VeexOFAOv6YSxioKUGq9SKW3kUhtIZEkqI5/WELqd177RfrLyW9IksbHHD6WP3GD
+        KTQewcxFHsDr2Pu9Zq6Nvg3uCUhQT6vKASYbdO4E5NJHJvLmeGILHL0xIATEKYx/J5LbaO6zgbU8tu9M
+        5AKev/GDr5Axp4X67DVpdLxMYFrY7YMeK9jDXhuSKTJnV+JV92qRzFyj5myD1pDTMiF8sXtKC9j9LkvW
+        nE8fNiwIWkwIyKAZ92V3kBZ0HnC7/TPY3c5pwZx7BT4xQhcmvMKui31Bx8q9QjzJj5WGpM0E1iD95GpS
+        mCFRmNBEAhcbs0jkNN6NbAoNMhPB6xTqmz+66Sdjh4gjxNG/cIz0/eD+wwzAf/EHt7/PgpL6QysAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="accordionControlElement终端月成本.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAH3RFWHRUaXRsZQBHcmlkO0hl
+        YWRlcjtDb2x1bW5IZWFkZXI7l8XK+gAAAm5JREFUOE+lk91PkmEYxp/soLbqn2gdt1Uqms22WlvTg7Y2
+        py5pbbYU+1gfTgFR8TORQqFCXY5WWFkHHQgJ4ztUVIhS3Op/QEEdBIRuV/fzAqKbrYMOfruf93qu+3q+
+        9jLG2AGi4B8cpPn9KGA+9TnXvLoMvsEyzKnOYnagFDP9RF8JvD0l8HSL4FEWw91ZBFd7EZyKQjjazsAu
+        Pw1r6yk38/aWIr4yjNiKBrHlp4QaIUMd4j8N2Az2YfNrLzYD3QjorpJPj40FBdZ9ckKGyWsnwL50iRAL
+        DSHqakTUeQsRx03M9ZdjY74Ta7YbWLVex5pFDKdchOiMHGFzLcKmGqzPtuBd7XEwd0cxYktqRLLNEXs9
+        ZnvKsOHrwBpvtoqxOl0Hp7QIUa+UAmoQnqqm8SNMVFMAP9cPoxgrYxUIjVZgWX8ZdmkhQmNV+K69hODQ
+        RQQ1F2C+cxJB3RX4VeexOFAOv6YSxioKUGq9SKW3kUhtIZEkqI5/WELqd177RfrLyW9IksbHHD6WP3GD
+        KTQewcxFHsDr2Pu9Zq6Nvg3uCUhQT6vKASYbdO4E5NJHJvLmeGILHL0xIATEKYx/J5LbaO6zgbU8tu9M
+        5AKev/GDr5Axp4X67DVpdLxMYFrY7YMeK9jDXhuSKTJnV+JV92qRzFyj5myD1pDTMiF8sXtKC9j9LkvW
+        nE8fNiwIWkwIyKAZ92V3kBZ0HnC7/TPY3c5pwZx7BT4xQhcmvMKui31Bx8q9QjzJj5WGpM0E1iD95GpS
+        mCFRmNBEAhcbs0jkNN6NbAoNMhPB6xTqmz+66Sdjh4gjxNG/cIz0/eD+wwzAf/EHt7/PgpL6QysAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="accordionControlElement终端部门日成本.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAH3RFWHRUaXRsZQBHcmlkO0hl
+        YWRlcjtDb2x1bW5IZWFkZXI7l8XK+gAAAm5JREFUOE+lk91PkmEYxp/soLbqn2gdt1Uqms22WlvTg7Y2
+        py5pbbYU+1gfTgFR8TORQqFCXY5WWFkHHQgJ4ztUVIhS3Op/QEEdBIRuV/fzAqKbrYMOfruf93qu+3q+
+        9jLG2AGi4B8cpPn9KGA+9TnXvLoMvsEyzKnOYnagFDP9RF8JvD0l8HSL4FEWw91ZBFd7EZyKQjjazsAu
+        Pw1r6yk38/aWIr4yjNiKBrHlp4QaIUMd4j8N2Az2YfNrLzYD3QjorpJPj40FBdZ9ckKGyWsnwL50iRAL
+        DSHqakTUeQsRx03M9ZdjY74Ta7YbWLVex5pFDKdchOiMHGFzLcKmGqzPtuBd7XEwd0cxYktqRLLNEXs9
+        ZnvKsOHrwBpvtoqxOl0Hp7QIUa+UAmoQnqqm8SNMVFMAP9cPoxgrYxUIjVZgWX8ZdmkhQmNV+K69hODQ
+        RQQ1F2C+cxJB3RX4VeexOFAOv6YSxioKUGq9SKW3kUhtIZEkqI5/WELqd177RfrLyW9IksbHHD6WP3GD
+        KTQewcxFHsDr2Pu9Zq6Nvg3uCUhQT6vKASYbdO4E5NJHJvLmeGILHL0xIATEKYx/J5LbaO6zgbU8tu9M
+        5AKev/GDr5Axp4X67DVpdLxMYFrY7YMeK9jDXhuSKTJnV+JV92qRzFyj5myD1pDTMiF8sXtKC9j9LkvW
+        nE8fNiwIWkwIyKAZ92V3kBZ0HnC7/TPY3c5pwZx7BT4xQhcmvMKui31Bx8q9QjzJj5WGpM0E1iD95GpS
+        mCFRmNBEAhcbs0jkNN6NbAoNMhPB6xTqmz+66Sdjh4gjxNG/cIz0/eD+wwzAf/EHt7/PgpL6QysAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="accordionControlElement终端部门月成本.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAH3RFWHRUaXRsZQBHcmlkO0hl
+        YWRlcjtDb2x1bW5IZWFkZXI7l8XK+gAAAm5JREFUOE+lk91PkmEYxp/soLbqn2gdt1Uqms22WlvTg7Y2
+        py5pbbYU+1gfTgFR8TORQqFCXY5WWFkHHQgJ4ztUVIhS3Op/QEEdBIRuV/fzAqKbrYMOfruf93qu+3q+
+        9jLG2AGi4B8cpPn9KGA+9TnXvLoMvsEyzKnOYnagFDP9RF8JvD0l8HSL4FEWw91ZBFd7EZyKQjjazsAu
+        Pw1r6yk38/aWIr4yjNiKBrHlp4QaIUMd4j8N2Az2YfNrLzYD3QjorpJPj40FBdZ9ckKGyWsnwL50iRAL
+        DSHqakTUeQsRx03M9ZdjY74Ta7YbWLVex5pFDKdchOiMHGFzLcKmGqzPtuBd7XEwd0cxYktqRLLNEXs9
+        ZnvKsOHrwBpvtoqxOl0Hp7QIUa+UAmoQnqqm8SNMVFMAP9cPoxgrYxUIjVZgWX8ZdmkhQmNV+K69hODQ
+        RQQ1F2C+cxJB3RX4VeexOFAOv6YSxioKUGq9SKW3kUhtIZEkqI5/WELqd177RfrLyW9IksbHHD6WP3GD
+        KTQewcxFHsDr2Pu9Zq6Nvg3uCUhQT6vKASYbdO4E5NJHJvLmeGILHL0xIATEKYx/J5LbaO6zgbU8tu9M
+        5AKev/GDr5Axp4X67DVpdLxMYFrY7YMeK9jDXhuSKTJnV+JV92qRzFyj5myD1pDTMiF8sXtKC9j9LkvW
+        nE8fNiwIWkwIyKAZ92V3kBZ0HnC7/TPY3c5pwZx7BT4xQhcmvMKui31Bx8q9QjzJj5WGpM0E1iD95GpS
+        mCFRmNBEAhcbs0jkNN6NbAoNMhPB6xTqmz+66Sdjh4gjxNG/cIz0/eD+wwzAf/EHt7/PgpL6QysAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="accordionControlElement终端日成本报表.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAADXRFWHRUaXRsZQBDb2x1bW47
+        UaPC6wAAAp9JREFUOE+Vkn9MzHEYx6/0g5pI8gd/MBphMkV2qOgcKnW3ikVTuaS0tX4pJa5VV2s5NdRa
+        y4+IdJdqWuvHnLu+pc7J9eOuMP7pD3+YDGtDpL3d87ljx0bz2T579v5+n/fr83ye58Pj/XvZmH7bmvY8
+        SyT9+wLA+9smk7TJoJE2j+OcwtBDIOtcRpoDYJfXNIb+17PIVRphSrf7X4B9TqMBLS++I/vuKAHsfwL0
+        x0Xmq8xRgX1G/TAU4zNIuzVEAEeqgkCWaMPjsv1/QUwfqUnUMEqg6JBSp0f9yFckX3tKACdjfBj3PEEM
+        oySMY3laWbg1wK64YS9XqhBCdkdACU6JtU9Qq59GQo2OAAufSUSYVTVjPC7UXJG2SGwNcJA1BOLVu1YU
+        3t7NDJIqLa5ovyCucoD0orHYEMzUyTF2LJj0fGqD9Z0c82/6QTshx/kbuyjBJfpSHy5ynxBV0Ut6sfHo
+        PkxXF2A0Skh6AW+oXMQZKsTQXwilkp1zr/pC/TIfZ2q2shMj5RyKVVOIKNOQdh2O2IPP8iwMiQPMgJGy
+        EGCiBYMl+5kho2oz2o3pSL3sxQyiUhXyOj4itOQB6SX6gzsxlZ+EwSA+aypPJxMAw8Xol/qzEpPLPaHQ
+        SZAkX8cMQYXdOH3/PQ4UdpF20wl98CEzGo8F3qSdeX1n+ZgdyII6k5XsKilZhevcIcQWrWQGgbQDKfcm
+        EWiKJr20P8ALk4liPPLbZAao0rbgm+YkOk9tZCdGF6xAZXcwjkiXM4B/XjsSG9/CL6edtHvvjg14EyNE
+        D3+9GdAa7/mw7cRaKGM81DS2yBx39eHcZQjPciPtsj1dqeFnt8E3VamhHnX5rNFotnmg03s1aTZGB9ZN
+        c6TXR8/VyRJpxH9qMjlbzLY/AKUctMpzUngXAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="accordionControlElement终端日成本单台报表.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAADXRFWHRUaXRsZQBDb2x1bW47
+        UaPC6wAAAp9JREFUOE+Vkn9MzHEYx6/0g5pI8gd/MBphMkV2qOgcKnW3ikVTuaS0tX4pJa5VV2s5NdRa
+        y4+IdJdqWuvHnLu+pc7J9eOuMP7pD3+YDGtDpL3d87ljx0bz2T579v5+n/fr83ye58Pj/XvZmH7bmvY8
+        SyT9+wLA+9smk7TJoJE2j+OcwtBDIOtcRpoDYJfXNIb+17PIVRphSrf7X4B9TqMBLS++I/vuKAHsfwL0
+        x0Xmq8xRgX1G/TAU4zNIuzVEAEeqgkCWaMPjsv1/QUwfqUnUMEqg6JBSp0f9yFckX3tKACdjfBj3PEEM
+        oySMY3laWbg1wK64YS9XqhBCdkdACU6JtU9Qq59GQo2OAAufSUSYVTVjPC7UXJG2SGwNcJA1BOLVu1YU
+        3t7NDJIqLa5ovyCucoD0orHYEMzUyTF2LJj0fGqD9Z0c82/6QTshx/kbuyjBJfpSHy5ynxBV0Ut6sfHo
+        PkxXF2A0Skh6AW+oXMQZKsTQXwilkp1zr/pC/TIfZ2q2shMj5RyKVVOIKNOQdh2O2IPP8iwMiQPMgJGy
+        EGCiBYMl+5kho2oz2o3pSL3sxQyiUhXyOj4itOQB6SX6gzsxlZ+EwSA+aypPJxMAw8Xol/qzEpPLPaHQ
+        SZAkX8cMQYXdOH3/PQ4UdpF20wl98CEzGo8F3qSdeX1n+ZgdyII6k5XsKilZhevcIcQWrWQGgbQDKfcm
+        EWiKJr20P8ALk4liPPLbZAao0rbgm+YkOk9tZCdGF6xAZXcwjkiXM4B/XjsSG9/CL6edtHvvjg14EyNE
+        D3+9GdAa7/mw7cRaKGM81DS2yBx39eHcZQjPciPtsj1dqeFnt8E3VamhHnX5rNFotnmg03s1aTZGB9ZN
+        c6TXR8/VyRJpxH9qMjlbzLY/AKUctMpzUngXAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="accordionControlElement终端部门日成本报表.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAADXRFWHRUaXRsZQBDb2x1bW47
+        UaPC6wAAAp9JREFUOE+Vkn9MzHEYx6/0g5pI8gd/MBphMkV2qOgcKnW3ikVTuaS0tX4pJa5VV2s5NdRa
+        y4+IdJdqWuvHnLu+pc7J9eOuMP7pD3+YDGtDpL3d87ljx0bz2T579v5+n/fr83ye58Pj/XvZmH7bmvY8
+        SyT9+wLA+9smk7TJoJE2j+OcwtBDIOtcRpoDYJfXNIb+17PIVRphSrf7X4B9TqMBLS++I/vuKAHsfwL0
+        x0Xmq8xRgX1G/TAU4zNIuzVEAEeqgkCWaMPjsv1/QUwfqUnUMEqg6JBSp0f9yFckX3tKACdjfBj3PEEM
+        oySMY3laWbg1wK64YS9XqhBCdkdACU6JtU9Qq59GQo2OAAufSUSYVTVjPC7UXJG2SGwNcJA1BOLVu1YU
+        3t7NDJIqLa5ovyCucoD0orHYEMzUyTF2LJj0fGqD9Z0c82/6QTshx/kbuyjBJfpSHy5ynxBV0Ut6sfHo
+        PkxXF2A0Skh6AW+oXMQZKsTQXwilkp1zr/pC/TIfZ2q2shMj5RyKVVOIKNOQdh2O2IPP8iwMiQPMgJGy
+        EGCiBYMl+5kho2oz2o3pSL3sxQyiUhXyOj4itOQB6SX6gzsxlZ+EwSA+aypPJxMAw8Xol/qzEpPLPaHQ
+        SZAkX8cMQYXdOH3/PQ4UdpF20wl98CEzGo8F3qSdeX1n+ZgdyII6k5XsKilZhevcIcQWrWQGgbQDKfcm
+        EWiKJr20P8ALk4liPPLbZAao0rbgm+YkOk9tZCdGF6xAZXcwjkiXM4B/XjsSG9/CL6edtHvvjg14EyNE
+        D3+9GdAa7/mw7cRaKGM81DS2yBx39eHcZQjPciPtsj1dqeFnt8E3VamhHnX5rNFotnmg03s1aTZGB9ZN
+        c6TXR8/VyRJpxH9qMjlbzLY/AKUctMpzUngXAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="accordionControlElement终端部门日成本单台报表.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAADXRFWHRUaXRsZQBDb2x1bW47
+        UaPC6wAAAp9JREFUOE+Vkn9MzHEYx6/0g5pI8gd/MBphMkV2qOgcKnW3ikVTuaS0tX4pJa5VV2s5NdRa
+        y4+IdJdqWuvHnLu+pc7J9eOuMP7pD3+YDGtDpL3d87ljx0bz2T579v5+n/fr83ye58Pj/XvZmH7bmvY8
+        SyT9+wLA+9smk7TJoJE2j+OcwtBDIOtcRpoDYJfXNIb+17PIVRphSrf7X4B9TqMBLS++I/vuKAHsfwL0
+        x0Xmq8xRgX1G/TAU4zNIuzVEAEeqgkCWaMPjsv1/QUwfqUnUMEqg6JBSp0f9yFckX3tKACdjfBj3PEEM
+        oySMY3laWbg1wK64YS9XqhBCdkdACU6JtU9Qq59GQo2OAAufSUSYVTVjPC7UXJG2SGwNcJA1BOLVu1YU
+        3t7NDJIqLa5ovyCucoD0orHYEMzUyTF2LJj0fGqD9Z0c82/6QTshx/kbuyjBJfpSHy5ynxBV0Ut6sfHo
+        PkxXF2A0Skh6AW+oXMQZKsTQXwilkp1zr/pC/TIfZ2q2shMj5RyKVVOIKNOQdh2O2IPP8iwMiQPMgJGy
+        EGCiBYMl+5kho2oz2o3pSL3sxQyiUhXyOj4itOQB6SX6gzsxlZ+EwSA+aypPJxMAw8Xol/qzEpPLPaHQ
+        SZAkX8cMQYXdOH3/PQ4UdpF20wl98CEzGo8F3qSdeX1n+ZgdyII6k5XsKilZhevcIcQWrWQGgbQDKfcm
+        EWiKJr20P8ALk4liPPLbZAao0rbgm+YkOk9tZCdGF6xAZXcwjkiXM4B/XjsSG9/CL6edtHvvjg14EyNE
+        D3+9GdAa7/mw7cRaKGM81DS2yBx39eHcZQjPciPtsj1dqeFnt8E3VamhHnX5rNFotnmg03s1aTZGB9ZN
+        c6TXR8/VyRJpxH9qMjlbzLY/AKUctMpzUngXAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="accordionControlElement系统成本运算.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAH3RFWHRUaXRsZQBDYWxjdWxh
+        dGlvbjtDYWxjdWxhdGlvbnM79EO8PAAAAnFJREFUOE+dk91Lk2EYxh+wDuqg+gc66KAI+zK/+loJJUmY
+        qOTOxIiZc8uk5kw3NWuNdDmNDPqwdEEdZAmVpX1opWGkszooiYjApJCQNqfu28XV/dzvlEV10sGP+37u
+        +7qu54X3fYUQIo5YQCz8D+JEY6uzr8nxBk2O10yjpE0yDHurQsNVJ3PmihO2liHUtwyi/vIgrBcG+kXN
+        2T4Ewz8VZiMIhCXyHGECIaWXNRCKwB9F9pUNzyDM9udsVoyKmYVUvYFZXGy7Bd1RC5LT8lBUWjsf4A9G
+        UGF7CiFTYpPlgm+haracQ0qaGl++TaCYQmSQj+YSL2Gs64E4ZutlsY9MvuDsvGDo7Qds3JaLAq2J594A
+        7emJvNwrlFmfQBhP9/yWKhcJW3OQsCWXyMYGYv2mbDbMSPxRqD9ieQRhsD5WFnTDnOiHx4fkHfuwLjUL
+        n0fHMU2mP/CFUXriIYRM4VQKmRO9Gh7BmtRM7FUX4+t3NzLzNFgRvx1tN+7AWGVDZq4GUxRwuLYbQqZM
+        +8PMlIQWlxwdiE/ag+pTzfDQWaLaqYZqVx5GPo2xxuMNQ1/TBVFyvIsHDA2l+JDBgtWJGeh9McxCicFU
+        h7UpGdxPRtFV3YfQVz9gU35hOfI15RgbdyFJlUOv7CQmZ8g8E+Kqzi/B8pWb8e7jKJ3lLAStuRNCpkjB
+        fm0lViWk44DODPv5a5hw+1jU2OzA7qwCdPe+RHxiOjPgfA/3dAhFpnsQWlMnC91MmHFxjc5I6IpBGl20
+        k7PCirsQmrLr/cWmDijcjoE+YdMc7dRHMbdDz9zEQaOjn/5gsYhYQiz9B8to/jekfvEvy9TKOhjUD1kA
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="accordionControlElement系统日成本.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAH3RFWHRUaXRsZQBHcmlkO0hl
+        YWRlcjtDb2x1bW5IZWFkZXI7l8XK+gAAAm5JREFUOE+lk91PkmEYxp/soLbqn2gdt1Uqms22WlvTg7Y2
+        py5pbbYU+1gfTgFR8TORQqFCXY5WWFkHHQgJ4ztUVIhS3Op/QEEdBIRuV/fzAqKbrYMOfruf93qu+3q+
+        9jLG2AGi4B8cpPn9KGA+9TnXvLoMvsEyzKnOYnagFDP9RF8JvD0l8HSL4FEWw91ZBFd7EZyKQjjazsAu
+        Pw1r6yk38/aWIr4yjNiKBrHlp4QaIUMd4j8N2Az2YfNrLzYD3QjorpJPj40FBdZ9ckKGyWsnwL50iRAL
+        DSHqakTUeQsRx03M9ZdjY74Ta7YbWLVex5pFDKdchOiMHGFzLcKmGqzPtuBd7XEwd0cxYktqRLLNEXs9
+        ZnvKsOHrwBpvtoqxOl0Hp7QIUa+UAmoQnqqm8SNMVFMAP9cPoxgrYxUIjVZgWX8ZdmkhQmNV+K69hODQ
+        RQQ1F2C+cxJB3RX4VeexOFAOv6YSxioKUGq9SKW3kUhtIZEkqI5/WELqd177RfrLyW9IksbHHD6WP3GD
+        KTQewcxFHsDr2Pu9Zq6Nvg3uCUhQT6vKASYbdO4E5NJHJvLmeGILHL0xIATEKYx/J5LbaO6zgbU8tu9M
+        5AKev/GDr5Axp4X67DVpdLxMYFrY7YMeK9jDXhuSKTJnV+JV92qRzFyj5myD1pDTMiF8sXtKC9j9LkvW
+        nE8fNiwIWkwIyKAZ92V3kBZ0HnC7/TPY3c5pwZx7BT4xQhcmvMKui31Bx8q9QjzJj5WGpM0E1iD95GpS
+        mCFRmNBEAhcbs0jkNN6NbAoNMhPB6xTqmz+66Sdjh4gjxNG/cIz0/eD+wwzAf/EHt7/PgpL6QysAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="accordionControlElement系统月成本.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAH3RFWHRUaXRsZQBHcmlkO0hl
+        YWRlcjtDb2x1bW5IZWFkZXI7l8XK+gAAAm5JREFUOE+lk91PkmEYxp/soLbqn2gdt1Uqms22WlvTg7Y2
+        py5pbbYU+1gfTgFR8TORQqFCXY5WWFkHHQgJ4ztUVIhS3Op/QEEdBIRuV/fzAqKbrYMOfruf93qu+3q+
+        9jLG2AGi4B8cpPn9KGA+9TnXvLoMvsEyzKnOYnagFDP9RF8JvD0l8HSL4FEWw91ZBFd7EZyKQjjazsAu
+        Pw1r6yk38/aWIr4yjNiKBrHlp4QaIUMd4j8N2Az2YfNrLzYD3QjorpJPj40FBdZ9ckKGyWsnwL50iRAL
+        DSHqakTUeQsRx03M9ZdjY74Ta7YbWLVex5pFDKdchOiMHGFzLcKmGqzPtuBd7XEwd0cxYktqRLLNEXs9
+        ZnvKsOHrwBpvtoqxOl0Hp7QIUa+UAmoQnqqm8SNMVFMAP9cPoxgrYxUIjVZgWX8ZdmkhQmNV+K69hODQ
+        RQQ1F2C+cxJB3RX4VeexOFAOv6YSxioKUGq9SKW3kUhtIZEkqI5/WELqd177RfrLyW9IksbHHD6WP3GD
+        KTQewcxFHsDr2Pu9Zq6Nvg3uCUhQT6vKASYbdO4E5NJHJvLmeGILHL0xIATEKYx/J5LbaO6zgbU8tu9M
+        5AKev/GDr5Axp4X67DVpdLxMYFrY7YMeK9jDXhuSKTJnV+JV92qRzFyj5myD1pDTMiF8sXtKC9j9LkvW
+        nE8fNiwIWkwIyKAZ92V3kBZ0HnC7/TPY3c5pwZx7BT4xQhcmvMKui31Bx8q9QjzJj5WGpM0E1iD95GpS
+        mCFRmNBEAhcbs0jkNN6NbAoNMhPB6xTqmz+66Sdjh4gjxNG/cIz0/eD+wwzAf/EHt7/PgpL6QysAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="accordionControlElement系统部门日成本.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAH3RFWHRUaXRsZQBHcmlkO0hl
+        YWRlcjtDb2x1bW5IZWFkZXI7l8XK+gAAAm5JREFUOE+lk91PkmEYxp/soLbqn2gdt1Uqms22WlvTg7Y2
+        py5pbbYU+1gfTgFR8TORQqFCXY5WWFkHHQgJ4ztUVIhS3Op/QEEdBIRuV/fzAqKbrYMOfruf93qu+3q+
+        9jLG2AGi4B8cpPn9KGA+9TnXvLoMvsEyzKnOYnagFDP9RF8JvD0l8HSL4FEWw91ZBFd7EZyKQjjazsAu
+        Pw1r6yk38/aWIr4yjNiKBrHlp4QaIUMd4j8N2Az2YfNrLzYD3QjorpJPj40FBdZ9ckKGyWsnwL50iRAL
+        DSHqakTUeQsRx03M9ZdjY74Ta7YbWLVex5pFDKdchOiMHGFzLcKmGqzPtuBd7XEwd0cxYktqRLLNEXs9
+        ZnvKsOHrwBpvtoqxOl0Hp7QIUa+UAmoQnqqm8SNMVFMAP9cPoxgrYxUIjVZgWX8ZdmkhQmNV+K69hODQ
+        RQQ1F2C+cxJB3RX4VeexOFAOv6YSxioKUGq9SKW3kUhtIZEkqI5/WELqd177RfrLyW9IksbHHD6WP3GD
+        KTQewcxFHsDr2Pu9Zq6Nvg3uCUhQT6vKASYbdO4E5NJHJvLmeGILHL0xIATEKYx/J5LbaO6zgbU8tu9M
+        5AKev/GDr5Axp4X67DVpdLxMYFrY7YMeK9jDXhuSKTJnV+JV92qRzFyj5myD1pDTMiF8sXtKC9j9LkvW
+        nE8fNiwIWkwIyKAZ92V3kBZ0HnC7/TPY3c5pwZx7BT4xQhcmvMKui31Bx8q9QjzJj5WGpM0E1iD95GpS
+        mCFRmNBEAhcbs0jkNN6NbAoNMhPB6xTqmz+66Sdjh4gjxNG/cIz0/eD+wwzAf/EHt7/PgpL6QysAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="accordionControlElement系统部门月成本.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAH3RFWHRUaXRsZQBHcmlkO0hl
+        YWRlcjtDb2x1bW5IZWFkZXI7l8XK+gAAAm5JREFUOE+lk91PkmEYxp/soLbqn2gdt1Uqms22WlvTg7Y2
+        py5pbbYU+1gfTgFR8TORQqFCXY5WWFkHHQgJ4ztUVIhS3Op/QEEdBIRuV/fzAqKbrYMOfruf93qu+3q+
+        9jLG2AGi4B8cpPn9KGA+9TnXvLoMvsEyzKnOYnagFDP9RF8JvD0l8HSL4FEWw91ZBFd7EZyKQjjazsAu
+        Pw1r6yk38/aWIr4yjNiKBrHlp4QaIUMd4j8N2Az2YfNrLzYD3QjorpJPj40FBdZ9ckKGyWsnwL50iRAL
+        DSHqakTUeQsRx03M9ZdjY74Ta7YbWLVex5pFDKdchOiMHGFzLcKmGqzPtuBd7XEwd0cxYktqRLLNEXs9
+        ZnvKsOHrwBpvtoqxOl0Hp7QIUa+UAmoQnqqm8SNMVFMAP9cPoxgrYxUIjVZgWX8ZdmkhQmNV+K69hODQ
+        RQQ1F2C+cxJB3RX4VeexOFAOv6YSxioKUGq9SKW3kUhtIZEkqI5/WELqd177RfrLyW9IksbHHD6WP3GD
+        KTQewcxFHsDr2Pu9Zq6Nvg3uCUhQT6vKASYbdO4E5NJHJvLmeGILHL0xIATEKYx/J5LbaO6zgbU8tu9M
+        5AKev/GDr5Axp4X67DVpdLxMYFrY7YMeK9jDXhuSKTJnV+JV92qRzFyj5myD1pDTMiF8sXtKC9j9LkvW
+        nE8fNiwIWkwIyKAZ92V3kBZ0HnC7/TPY3c5pwZx7BT4xQhcmvMKui31Bx8q9QjzJj5WGpM0E1iD95GpS
+        mCFRmNBEAhcbs0jkNN6NbAoNMhPB6xTqmz+66Sdjh4gjxNG/cIz0/eD+wwzAf/EHt7/PgpL6QysAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="accordionControlElement系统日成本报表.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAADXRFWHRUaXRsZQBDb2x1bW47
+        UaPC6wAAAp9JREFUOE+Vkn9MzHEYx6/0g5pI8gd/MBphMkV2qOgcKnW3ikVTuaS0tX4pJa5VV2s5NdRa
+        y4+IdJdqWuvHnLu+pc7J9eOuMP7pD3+YDGtDpL3d87ljx0bz2T579v5+n/fr83ye58Pj/XvZmH7bmvY8
+        SyT9+wLA+9smk7TJoJE2j+OcwtBDIOtcRpoDYJfXNIb+17PIVRphSrf7X4B9TqMBLS++I/vuKAHsfwL0
+        x0Xmq8xRgX1G/TAU4zNIuzVEAEeqgkCWaMPjsv1/QUwfqUnUMEqg6JBSp0f9yFckX3tKACdjfBj3PEEM
+        oySMY3laWbg1wK64YS9XqhBCdkdACU6JtU9Qq59GQo2OAAufSUSYVTVjPC7UXJG2SGwNcJA1BOLVu1YU
+        3t7NDJIqLa5ovyCucoD0orHYEMzUyTF2LJj0fGqD9Z0c82/6QTshx/kbuyjBJfpSHy5ynxBV0Ut6sfHo
+        PkxXF2A0Skh6AW+oXMQZKsTQXwilkp1zr/pC/TIfZ2q2shMj5RyKVVOIKNOQdh2O2IPP8iwMiQPMgJGy
+        EGCiBYMl+5kho2oz2o3pSL3sxQyiUhXyOj4itOQB6SX6gzsxlZ+EwSA+aypPJxMAw8Xol/qzEpPLPaHQ
+        SZAkX8cMQYXdOH3/PQ4UdpF20wl98CEzGo8F3qSdeX1n+ZgdyII6k5XsKilZhevcIcQWrWQGgbQDKfcm
+        EWiKJr20P8ALk4liPPLbZAao0rbgm+YkOk9tZCdGF6xAZXcwjkiXM4B/XjsSG9/CL6edtHvvjg14EyNE
+        D3+9GdAa7/mw7cRaKGM81DS2yBx39eHcZQjPciPtsj1dqeFnt8E3VamhHnX5rNFotnmg03s1aTZGB9ZN
+        c6TXR8/VyRJpxH9qMjlbzLY/AKUctMpzUngXAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="accordionControlElement系统日成本单信道报表.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAADXRFWHRUaXRsZQBDb2x1bW47
+        UaPC6wAAAp9JREFUOE+Vkn9MzHEYx6/0g5pI8gd/MBphMkV2qOgcKnW3ikVTuaS0tX4pJa5VV2s5NdRa
+        y4+IdJdqWuvHnLu+pc7J9eOuMP7pD3+YDGtDpL3d87ljx0bz2T579v5+n/fr83ye58Pj/XvZmH7bmvY8
+        SyT9+wLA+9smk7TJoJE2j+OcwtBDIOtcRpoDYJfXNIb+17PIVRphSrf7X4B9TqMBLS++I/vuKAHsfwL0
+        x0Xmq8xRgX1G/TAU4zNIuzVEAEeqgkCWaMPjsv1/QUwfqUnUMEqg6JBSp0f9yFckX3tKACdjfBj3PEEM
+        oySMY3laWbg1wK64YS9XqhBCdkdACU6JtU9Qq59GQo2OAAufSUSYVTVjPC7UXJG2SGwNcJA1BOLVu1YU
+        3t7NDJIqLa5ovyCucoD0orHYEMzUyTF2LJj0fGqD9Z0c82/6QTshx/kbuyjBJfpSHy5ynxBV0Ut6sfHo
+        PkxXF2A0Skh6AW+oXMQZKsTQXwilkp1zr/pC/TIfZ2q2shMj5RyKVVOIKNOQdh2O2IPP8iwMiQPMgJGy
+        EGCiBYMl+5kho2oz2o3pSL3sxQyiUhXyOj4itOQB6SX6gzsxlZ+EwSA+aypPJxMAw8Xol/qzEpPLPaHQ
+        SZAkX8cMQYXdOH3/PQ4UdpF20wl98CEzGo8F3qSdeX1n+ZgdyII6k5XsKilZhevcIcQWrWQGgbQDKfcm
+        EWiKJr20P8ALk4liPPLbZAao0rbgm+YkOk9tZCdGF6xAZXcwjkiXM4B/XjsSG9/CL6edtHvvjg14EyNE
+        D3+9GdAa7/mw7cRaKGM81DS2yBx39eHcZQjPciPtsj1dqeFnt8E3VamhHnX5rNFotnmg03s1aTZGB9ZN
+        c6TXR8/VyRJpxH9qMjlbzLY/AKUctMpzUngXAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="accordionControlElement系统部门日成本报表.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAADXRFWHRUaXRsZQBDb2x1bW47
+        UaPC6wAAAp9JREFUOE+Vkn9MzHEYx6/0g5pI8gd/MBphMkV2qOgcKnW3ikVTuaS0tX4pJa5VV2s5NdRa
+        y4+IdJdqWuvHnLu+pc7J9eOuMP7pD3+YDGtDpL3d87ljx0bz2T579v5+n/fr83ye58Pj/XvZmH7bmvY8
+        SyT9+wLA+9smk7TJoJE2j+OcwtBDIOtcRpoDYJfXNIb+17PIVRphSrf7X4B9TqMBLS++I/vuKAHsfwL0
+        x0Xmq8xRgX1G/TAU4zNIuzVEAEeqgkCWaMPjsv1/QUwfqUnUMEqg6JBSp0f9yFckX3tKACdjfBj3PEEM
+        oySMY3laWbg1wK64YS9XqhBCdkdACU6JtU9Qq59GQo2OAAufSUSYVTVjPC7UXJG2SGwNcJA1BOLVu1YU
+        3t7NDJIqLa5ovyCucoD0orHYEMzUyTF2LJj0fGqD9Z0c82/6QTshx/kbuyjBJfpSHy5ynxBV0Ut6sfHo
+        PkxXF2A0Skh6AW+oXMQZKsTQXwilkp1zr/pC/TIfZ2q2shMj5RyKVVOIKNOQdh2O2IPP8iwMiQPMgJGy
+        EGCiBYMl+5kho2oz2o3pSL3sxQyiUhXyOj4itOQB6SX6gzsxlZ+EwSA+aypPJxMAw8Xol/qzEpPLPaHQ
+        SZAkX8cMQYXdOH3/PQ4UdpF20wl98CEzGo8F3qSdeX1n+ZgdyII6k5XsKilZhevcIcQWrWQGgbQDKfcm
+        EWiKJr20P8ALk4liPPLbZAao0rbgm+YkOk9tZCdGF6xAZXcwjkiXM4B/XjsSG9/CL6edtHvvjg14EyNE
+        D3+9GdAa7/mw7cRaKGM81DS2yBx39eHcZQjPciPtsj1dqeFnt8E3VamhHnX5rNFotnmg03s1aTZGB9ZN
+        c6TXR8/VyRJpxH9qMjlbzLY/AKUctMpzUngXAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="accordionControlElement系统部门日成本单信道报表.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAADXRFWHRUaXRsZQBDb2x1bW47
+        UaPC6wAAAp9JREFUOE+Vkn9MzHEYx6/0g5pI8gd/MBphMkV2qOgcKnW3ikVTuaS0tX4pJa5VV2s5NdRa
+        y4+IdJdqWuvHnLu+pc7J9eOuMP7pD3+YDGtDpL3d87ljx0bz2T579v5+n/fr83ye58Pj/XvZmH7bmvY8
+        SyT9+wLA+9smk7TJoJE2j+OcwtBDIOtcRpoDYJfXNIb+17PIVRphSrf7X4B9TqMBLS++I/vuKAHsfwL0
+        x0Xmq8xRgX1G/TAU4zNIuzVEAEeqgkCWaMPjsv1/QUwfqUnUMEqg6JBSp0f9yFckX3tKACdjfBj3PEEM
+        oySMY3laWbg1wK64YS9XqhBCdkdACU6JtU9Qq59GQo2OAAufSUSYVTVjPC7UXJG2SGwNcJA1BOLVu1YU
+        3t7NDJIqLa5ovyCucoD0orHYEMzUyTF2LJj0fGqD9Z0c82/6QTshx/kbuyjBJfpSHy5ynxBV0Ut6sfHo
+        PkxXF2A0Skh6AW+oXMQZKsTQXwilkp1zr/pC/TIfZ2q2shMj5RyKVVOIKNOQdh2O2IPP8iwMiQPMgJGy
+        EGCiBYMl+5kho2oz2o3pSL3sxQyiUhXyOj4itOQB6SX6gzsxlZ+EwSA+aypPJxMAw8Xol/qzEpPLPaHQ
+        SZAkX8cMQYXdOH3/PQ4UdpF20wl98CEzGo8F3qSdeX1n+ZgdyII6k5XsKilZhevcIcQWrWQGgbQDKfcm
+        EWiKJr20P8ALk4liPPLbZAao0rbgm+YkOk9tZCdGF6xAZXcwjkiXM4B/XjsSG9/CL6edtHvvjg14EyNE
+        D3+9GdAa7/mw7cRaKGM81DS2yBx39eHcZQjPciPtsj1dqeFnt8E3VamhHnX5rNFotnmg03s1aTZGB9ZN
+        c6TXR8/VyRJpxH9qMjlbzLY/AKUctMpzUngXAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <metadata name="defaultLookAndFeel1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>359, 17</value>
+  </metadata>
+  <metadata name="xtraTabbedMdiManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>536, 17</value>
+  </metadata>
+</root>
