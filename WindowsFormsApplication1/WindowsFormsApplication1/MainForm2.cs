@@ -2824,7 +2824,48 @@ namespace SMTCost
 
         private void accordionControlElement线体用料_Click(object sender, EventArgs e)
         {
+            bool isopen = true;
+            foreach (Form f in this.MdiChildren)
+            {
+                if (f.Name == "MatlQueryLine")
+                {
+                    f.Visible = true;
+                    f.Activate();
+                    //f.WindowState = FormWindowState.Maximized;
+                    isopen = false;
+                    break;
+                }
+            }
+            if (isopen)
+            {
+                MatlQueryLine Frm = MatlQueryLine.GetInstance();
+                Frm.MdiParent = this;
+                //Frm.WindowState = FormWindowState.Maximized;
+                Frm.Show();
+            }
+        }
 
+        private void accordionControlElement物料单价_Click(object sender, EventArgs e)
+        {
+            bool isopen = true;
+            foreach (Form f in this.MdiChildren)
+            {
+                if (f.Name == "MatlPriceImport")
+                {
+                    f.Visible = true;
+                    f.Activate();
+                    //f.WindowState = FormWindowState.Maximized;
+                    isopen = false;
+                    break;
+                }
+            }
+            if (isopen)
+            {
+                MatlPriceImport Frm = MatlPriceImport.GetInstance();
+                Frm.MdiParent = this;
+                //Frm.WindowState = FormWindowState.Maximized;
+                Frm.Show();
+            }
         }
     }
 }

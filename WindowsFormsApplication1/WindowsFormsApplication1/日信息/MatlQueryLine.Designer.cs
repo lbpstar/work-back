@@ -1,6 +1,6 @@
 ﻿namespace SMTCost
 {
-    partial class MatlQuery
+    partial class MatlQueryLine
     {
         /// <summary>
         /// Required designer variable.
@@ -224,14 +224,14 @@
             this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem9.TextVisible = false;
             // 
-            // MatlQuery
+            // MatlQueryLine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(517, 650);
             this.Controls.Add(this.layoutControl1);
-            this.Name = "MatlQuery";
-            this.Text = "用料明细";
+            this.Name = "MatlQueryLine";
+            this.Text = "线体用料";
             this.Load += new System.EventHandler(this.AttendanceImport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);

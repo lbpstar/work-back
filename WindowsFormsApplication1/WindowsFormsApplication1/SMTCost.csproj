@@ -713,11 +713,17 @@
     <Compile Include="日信息\MatlQuery.Designer.cs">
       <DependentUpon>MatlQuery.cs</DependentUpon>
     </Compile>
-    <Compile Include="测试\MatlPriceImport.cs">
+    <Compile Include="月度信息\MatlPriceImport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="测试\MatlPriceImport.Designer.cs">
+    <Compile Include="月度信息\MatlPriceImport.Designer.cs">
       <DependentUpon>MatlPriceImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="日信息\MatlQueryLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="日信息\MatlQueryLine.Designer.cs">
+      <DependentUpon>MatlQueryLine.cs</DependentUpon>
     </Compile>
     <Compile Include="测试\SMTCost.cs">
       <SubType>Form</SubType>
@@ -1836,8 +1842,11 @@
     <EmbeddedResource Include="日信息\MatlQuery.resx">
       <DependentUpon>MatlQuery.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="测试\MatlPriceImport.resx">
+    <EmbeddedResource Include="月度信息\MatlPriceImport.resx">
       <DependentUpon>MatlPriceImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日信息\MatlQueryLine.resx">
+      <DependentUpon>MatlQueryLine.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="测试\SMTCost.resx">
       <DependentUpon>SMTCost.cs</DependentUpon>

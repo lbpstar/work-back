@@ -145,6 +145,24 @@ namespace SMTCost
             excel.Columns.AutoFit();
             return true;
         }
+        /// <summary>
+        /// 获取月份第一天
+        /// </summary>
+        /// <param name="datetime"></param>
+        /// <returns></returns>
+        public static DateTime FirstDayOfMonth(DateTime datetime)
+        {
+            return datetime.AddDays(1 - datetime.Day);
+        }
+        //// <summary>
+        /// 取得月份最后一天
+        /// </summary>
+        /// <param name="datetime"></param>
+        /// <returns></returns>
+        public static DateTime LastDayOfMonth(DateTime datetime)
+        {
+            return datetime.AddDays(1 - datetime.Day).AddMonths(1).AddDays(-1);
+        }
     }
     
 }

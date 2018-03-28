@@ -83,6 +83,8 @@
             this.accordionControlElement信道数 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement临时工工时 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement用料 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement用料明细 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement线体用料 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement月度数据 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement直接人工费率 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement间接人工费率 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -179,8 +181,7 @@
             this.accordionControlElement按部门审批 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement退出系统 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement拉别 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement用料明细 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement线体用料 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement物料单价 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barAndDockingController1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
@@ -587,7 +588,6 @@
             this.accordionControlElement信道数,
             this.accordionControlElement临时工工时,
             this.accordionControlElement用料});
-            this.accordionControlElement日数据.Expanded = true;
             this.accordionControlElement日数据.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
@@ -680,6 +680,22 @@
             this.accordionControlElement用料.Tag = "用料";
             this.accordionControlElement用料.Text = "用料";
             // 
+            // accordionControlElement用料明细
+            // 
+            this.accordionControlElement用料明细.Name = "accordionControlElement用料明细";
+            this.accordionControlElement用料明细.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement用料明细.Tag = "用料明细";
+            this.accordionControlElement用料明细.Text = "用料明细";
+            this.accordionControlElement用料明细.Click += new System.EventHandler(this.accordionControlElement用料明细_Click);
+            // 
+            // accordionControlElement线体用料
+            // 
+            this.accordionControlElement线体用料.Name = "accordionControlElement线体用料";
+            this.accordionControlElement线体用料.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement线体用料.Tag = "线体用料";
+            this.accordionControlElement线体用料.Text = "线体用料";
+            this.accordionControlElement线体用料.Click += new System.EventHandler(this.accordionControlElement线体用料_Click);
+            // 
             // accordionControlElement月度数据
             // 
             this.accordionControlElement月度数据.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
@@ -694,7 +710,9 @@
             this.accordionControlElement特殊工单归集,
             this.accordionControlElement临时工费率,
             this.accordionControlElement主营综合费用,
-            this.accordionControlElement标准单机工时});
+            this.accordionControlElement标准单机工时,
+            this.accordionControlElement物料单价});
+            this.accordionControlElement月度数据.Expanded = true;
             this.accordionControlElement月度数据.Name = "accordionControlElement月度数据";
             this.accordionControlElement月度数据.Tag = "月度数据";
             this.accordionControlElement月度数据.Text = "月度数据";
@@ -1583,21 +1601,13 @@
             this.accordionControlElement拉别.Text = "拉别";
             this.accordionControlElement拉别.Click += new System.EventHandler(this.accordionControlElement拉别_Click);
             // 
-            // accordionControlElement用料明细
+            // accordionControlElement物料单价
             // 
-            this.accordionControlElement用料明细.Name = "accordionControlElement用料明细";
-            this.accordionControlElement用料明细.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement用料明细.Tag = "用料明细";
-            this.accordionControlElement用料明细.Text = "用料明细";
-            this.accordionControlElement用料明细.Click += new System.EventHandler(this.accordionControlElement用料明细_Click);
-            // 
-            // accordionControlElement线体用料
-            // 
-            this.accordionControlElement线体用料.Name = "accordionControlElement线体用料";
-            this.accordionControlElement线体用料.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement线体用料.Tag = "线体用料";
-            this.accordionControlElement线体用料.Text = "线体用料";
-            this.accordionControlElement线体用料.Click += new System.EventHandler(this.accordionControlElement线体用料_Click);
+            this.accordionControlElement物料单价.Name = "accordionControlElement物料单价";
+            this.accordionControlElement物料单价.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement物料单价.Tag = "物料单价";
+            this.accordionControlElement物料单价.Text = "物料单价";
+            this.accordionControlElement物料单价.Click += new System.EventHandler(this.accordionControlElement物料单价_Click);
             // 
             // MainForm2
             // 
@@ -1777,5 +1787,6 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement用料;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement用料明细;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement线体用料;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement物料单价;
     }
 }

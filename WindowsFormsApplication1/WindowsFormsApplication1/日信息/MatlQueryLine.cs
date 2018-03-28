@@ -12,20 +12,20 @@ using DevExpress.XtraEditors;
 
 namespace SMTCost
 {
-    public partial class MatlQuery : DevExpress.XtraEditors.XtraForm
+    public partial class MatlQueryLine : DevExpress.XtraEditors.XtraForm
     {
         public delegate bool MethodCaller();
-        public MatlQuery()
+        public MatlQueryLine()
         {
             InitializeComponent();
         }
-        private static MatlQuery ilaform = null;
+        private static MatlQueryLine ilaform = null;
 
-        public static MatlQuery GetInstance()
+        public static MatlQueryLine GetInstance()
         {
             if (ilaform == null || ilaform.IsDisposed)
             {
-                ilaform = new MatlQuery();
+                ilaform = new MatlQueryLine();
             }
             return ilaform;
         }
@@ -44,7 +44,7 @@ namespace SMTCost
             IDataParameter[] parameters = new IDataParameter[] { new SqlParameter("@cmonth", cmonth)};
             try
             {
-                ds = conn.RunProcedure("COST_MATL_QUERY", parameters, matl);
+                ds = conn.RunProcedure("COST_MATL_QUERY_LINE", parameters, matl);
                 gridControl1.DataSource = ds.Tables[0].DefaultView;
             }
             catch
@@ -61,15 +61,10 @@ namespace SMTCost
                 gridView1.Columns[4].OptionsColumn.ReadOnly = true;
                 gridView1.Columns[5].OptionsColumn.ReadOnly = true;
                 gridView1.Columns[6].OptionsColumn.ReadOnly = true;
-                gridView1.Columns[7].OptionsColumn.ReadOnly = true;
-                gridView1.Columns[8].OptionsColumn.ReadOnly = true;
-                gridView1.Columns[9].OptionsColumn.ReadOnly = true;
-                gridView1.Columns[10].OptionsColumn.ReadOnly = true;
-                gridView1.Columns[11].OptionsColumn.ReadOnly = true;
-
-                gridView1.Columns[7].Visible = false;
-                gridView1.Columns[9].Visible = false;
-                gridView1.Columns[10].Visible = false;
+                
+                gridView1.Columns[2].Visible = false;
+                gridView1.Columns[4].Visible = false;
+                gridView1.Columns[5].Visible = false;
                 //gridView1.Columns[0].OptionsColumn.FixedWidth = true;
                 //gridView1.Columns[0].Width = 40;
                 //gridView1.Columns[1].OptionsColumn.FixedWidth = true;
@@ -186,7 +181,7 @@ namespace SMTCost
             IDataParameter[] parameters = new IDataParameter[] { new SqlParameter("@cmonth", cmonth) };
             try
             {
-                ds = conn.RunProcedure("COST_MATL_QUERY", parameters, matl);
+                ds = conn.RunProcedure("COST_MATL_QUERY_LINE", parameters, matl);
                 bool isok = DataSetToExcel(ds, true);
                 if (isok)
                 {
